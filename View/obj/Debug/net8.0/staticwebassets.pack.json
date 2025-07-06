@@ -1,0 +1,765 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\View.bundle.scp.css",
+      "PackagePath": "staticwebassets\\View.ckd0vb928n.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\JavaScript.js",
+      "PackagePath": "staticwebassets\\JavaScript.js"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\0afcc33f-15d0-4cd2-b34f-71743d896f1c.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\0afcc33f-15d0-4cd2-b34f-71743d896f1c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\0d1f798e-051c-4c14-87a7-39fcb47c2bd9.png",
+      "PackagePath": "staticwebassets\\artist-images\\0d1f798e-051c-4c14-87a7-39fcb47c2bd9.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\1b0805e9-601f-44b0-97ac-420c519631f5.jpeg",
+      "PackagePath": "staticwebassets\\artist-images\\1b0805e9-601f-44b0-97ac-420c519631f5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\1d92ca35-4f47-4d00-822e-b1115cf5ac16.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\1d92ca35-4f47-4d00-822e-b1115cf5ac16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\28b04118-2d6b-4f61-bfe9-89a5cc9436bf.jpeg",
+      "PackagePath": "staticwebassets\\artist-images\\28b04118-2d6b-4f61-bfe9-89a5cc9436bf.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\3fabdc60-8668-48ac-b42d-b4d868177b42.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\3fabdc60-8668-48ac-b42d-b4d868177b42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\55351cd5-f7a8-44a5-8633-1a474a2802a3.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\55351cd5-f7a8-44a5-8633-1a474a2802a3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\77ff7873-c885-427d-afe8-a4a7b7b29bd9.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\77ff7873-c885-427d-afe8-a4a7b7b29bd9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\89fe378a-b431-43ec-8fef-6c85005a5fd5.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\89fe378a-b431-43ec-8fef-6c85005a5fd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\8c43ea8b-df0d-4cdf-8ab5-6f31da698b89.png",
+      "PackagePath": "staticwebassets\\artist-images\\8c43ea8b-df0d-4cdf-8ab5-6f31da698b89.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\8e6e86da-8f34-457c-8d42-36aafe5597d5.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\8e6e86da-8f34-457c-8d42-36aafe5597d5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\afb72597-81c6-40d1-b0a5-a0a0a9ce9dd8.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\afb72597-81c6-40d1-b0a5-a0a0a9ce9dd8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\e4170ea6-13dd-43d9-8bcd-2a902208225c.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\e4170ea6-13dd-43d9-8bcd-2a902208225c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\f1cb81c3-ce08-479a-83ec-68962c228184.webp",
+      "PackagePath": "staticwebassets\\artist-images\\f1cb81c3-ce08-479a-83ec-68962c228184.webp"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist-images\\fd5c66f2-7395-44c5-8d3f-631207c58eff.jpg",
+      "PackagePath": "staticwebassets\\artist-images\\fd5c66f2-7395-44c5-8d3f-631207c58eff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\032cad31-8a8f-442a-beb5-754c4ef0e499.jpeg",
+      "PackagePath": "staticwebassets\\artist\\032cad31-8a8f-442a-beb5-754c4ef0e499.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\03ce7eca-73d8-47ac-af95-ab7d103c480e.jpg",
+      "PackagePath": "staticwebassets\\artist\\03ce7eca-73d8-47ac-af95-ab7d103c480e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\06a41368-0265-4b37-a42c-fb0a4482b933.jpeg",
+      "PackagePath": "staticwebassets\\artist\\06a41368-0265-4b37-a42c-fb0a4482b933.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\089255be-05c3-4dca-8f2c-13ed5ade3e0e.jpeg",
+      "PackagePath": "staticwebassets\\artist\\089255be-05c3-4dca-8f2c-13ed5ade3e0e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\0bacab0f-23a1-4ef8-8757-d575acb3fac7.jpg",
+      "PackagePath": "staticwebassets\\artist\\0bacab0f-23a1-4ef8-8757-d575acb3fac7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\0e5f55e0-5436-4460-b801-1504fd4d4ac5.jpg",
+      "PackagePath": "staticwebassets\\artist\\0e5f55e0-5436-4460-b801-1504fd4d4ac5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\0ff09194-c06c-4168-9e7b-cb9ff64b26fa.jpg",
+      "PackagePath": "staticwebassets\\artist\\0ff09194-c06c-4168-9e7b-cb9ff64b26fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\1244bce8-725b-4217-8af8-c3a6868f9c54.jpg",
+      "PackagePath": "staticwebassets\\artist\\1244bce8-725b-4217-8af8-c3a6868f9c54.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\163d2d6f-4fa4-4561-a4ab-a8c42fd8d080.jpeg",
+      "PackagePath": "staticwebassets\\artist\\163d2d6f-4fa4-4561-a4ab-a8c42fd8d080.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\1643f807-4486-47bd-936f-9f0afbc56b9b.jpg",
+      "PackagePath": "staticwebassets\\artist\\1643f807-4486-47bd-936f-9f0afbc56b9b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\1fb0b44c-8020-4806-b315-ace1fdc8fe53.jpg",
+      "PackagePath": "staticwebassets\\artist\\1fb0b44c-8020-4806-b315-ace1fdc8fe53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\20297d34-bd61-4fa5-99bc-7db198c38aa2.webp",
+      "PackagePath": "staticwebassets\\artist\\20297d34-bd61-4fa5-99bc-7db198c38aa2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\26e06853-8e4c-4a6f-98db-b1e790ffb04b.jpg",
+      "PackagePath": "staticwebassets\\artist\\26e06853-8e4c-4a6f-98db-b1e790ffb04b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\2a672925-639d-469a-b47c-4c83082f4168.jpg",
+      "PackagePath": "staticwebassets\\artist\\2a672925-639d-469a-b47c-4c83082f4168.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\2ef7a49c-779b-4eb9-890e-694018f4047f.jpg",
+      "PackagePath": "staticwebassets\\artist\\2ef7a49c-779b-4eb9-890e-694018f4047f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\3214a6d4-ee21-4bff-bacc-eda90f9eb927.jpg",
+      "PackagePath": "staticwebassets\\artist\\3214a6d4-ee21-4bff-bacc-eda90f9eb927.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\347da16a-c650-41c8-be9c-dfeb73a69685.jpg",
+      "PackagePath": "staticwebassets\\artist\\347da16a-c650-41c8-be9c-dfeb73a69685.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\35ccfa10-e774-438d-bb04-a61b3ee1f964.jpg",
+      "PackagePath": "staticwebassets\\artist\\35ccfa10-e774-438d-bb04-a61b3ee1f964.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\35ea919b-45de-4a45-ab55-a104e2d326f2.jpg",
+      "PackagePath": "staticwebassets\\artist\\35ea919b-45de-4a45-ab55-a104e2d326f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\369222d3-01f3-4292-ba93-027806103489.jpg",
+      "PackagePath": "staticwebassets\\artist\\369222d3-01f3-4292-ba93-027806103489.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\38f063a6-d863-4aa1-8de1-bf5a4b55e816.jpg",
+      "PackagePath": "staticwebassets\\artist\\38f063a6-d863-4aa1-8de1-bf5a4b55e816.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\47057e3f-b68a-4ff0-a6cc-1dbf88fa3b72.jpg",
+      "PackagePath": "staticwebassets\\artist\\47057e3f-b68a-4ff0-a6cc-1dbf88fa3b72.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\4ee4f7ad-3db2-4b0b-a495-f857a527b371.jpeg",
+      "PackagePath": "staticwebassets\\artist\\4ee4f7ad-3db2-4b0b-a495-f857a527b371.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\50099c7f-f6d3-4cf0-9e21-586728c785a6.jpeg",
+      "PackagePath": "staticwebassets\\artist\\50099c7f-f6d3-4cf0-9e21-586728c785a6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\5253d2cd-b5c5-4a68-8744-322126782ce8.jpg",
+      "PackagePath": "staticwebassets\\artist\\5253d2cd-b5c5-4a68-8744-322126782ce8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\5b515a22-124f-4123-8519-79101880c789.jpg",
+      "PackagePath": "staticwebassets\\artist\\5b515a22-124f-4123-8519-79101880c789.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\5c3b9c23-24a7-4d3e-9cec-52be3d69b923.jpg",
+      "PackagePath": "staticwebassets\\artist\\5c3b9c23-24a7-4d3e-9cec-52be3d69b923.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\659d2b74-60f4-4e53-bc85-3657d1d894ae.jpg",
+      "PackagePath": "staticwebassets\\artist\\659d2b74-60f4-4e53-bc85-3657d1d894ae.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6a971f15-f1da-4c3a-8071-966a8f3147bf.jpg",
+      "PackagePath": "staticwebassets\\artist\\6a971f15-f1da-4c3a-8071-966a8f3147bf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6afc1b3f-f136-4ac6-9062-721e2d8dcdfa.jpg",
+      "PackagePath": "staticwebassets\\artist\\6afc1b3f-f136-4ac6-9062-721e2d8dcdfa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6b82036d-3bea-4ba7-880d-b30efcc1f42e.jpg",
+      "PackagePath": "staticwebassets\\artist\\6b82036d-3bea-4ba7-880d-b30efcc1f42e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6e1f26bf-92d1-4400-9712-4171c496b663.jpeg",
+      "PackagePath": "staticwebassets\\artist\\6e1f26bf-92d1-4400-9712-4171c496b663.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6e8bfa27-f0be-46d2-b6a5-652a4d651258.jpg",
+      "PackagePath": "staticwebassets\\artist\\6e8bfa27-f0be-46d2-b6a5-652a4d651258.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\6f5a1ba1-23d5-423c-8093-89d799745c88.png",
+      "PackagePath": "staticwebassets\\artist\\6f5a1ba1-23d5-423c-8093-89d799745c88.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\7421ece4-657c-49eb-8e98-d4e025b6c9c2.jpg",
+      "PackagePath": "staticwebassets\\artist\\7421ece4-657c-49eb-8e98-d4e025b6c9c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\7b70b9e8-d928-4ab9-b5c5-6fd730bab333.jpg",
+      "PackagePath": "staticwebassets\\artist\\7b70b9e8-d928-4ab9-b5c5-6fd730bab333.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\7da299f9-aea8-4e85-8a21-4121b95d9005.jpg",
+      "PackagePath": "staticwebassets\\artist\\7da299f9-aea8-4e85-8a21-4121b95d9005.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\80f2e938-ce2c-43bf-9a0b-8e38cd8588da.jpg",
+      "PackagePath": "staticwebassets\\artist\\80f2e938-ce2c-43bf-9a0b-8e38cd8588da.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\81122dfc-00a2-4dfc-8386-42024122144f.jpg",
+      "PackagePath": "staticwebassets\\artist\\81122dfc-00a2-4dfc-8386-42024122144f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\8a99c5c2-65b9-40bb-8e98-0312113b8f15.jpg",
+      "PackagePath": "staticwebassets\\artist\\8a99c5c2-65b9-40bb-8e98-0312113b8f15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\a10ef654-3c8f-471a-b2ef-efce4533a6c4.jpg",
+      "PackagePath": "staticwebassets\\artist\\a10ef654-3c8f-471a-b2ef-efce4533a6c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\a54db084-02b2-42d2-8bbe-20919c18f1d6.jpg",
+      "PackagePath": "staticwebassets\\artist\\a54db084-02b2-42d2-8bbe-20919c18f1d6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\a7da2c93-f213-476d-880b-3cc28a14f6b4.jpg",
+      "PackagePath": "staticwebassets\\artist\\a7da2c93-f213-476d-880b-3cc28a14f6b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\a94f6225-2020-47ae-92ea-f8c6d89e9b9e.jpg",
+      "PackagePath": "staticwebassets\\artist\\a94f6225-2020-47ae-92ea-f8c6d89e9b9e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\aa94d810-004a-4198-8545-4b981d310bfc.jpeg",
+      "PackagePath": "staticwebassets\\artist\\aa94d810-004a-4198-8545-4b981d310bfc.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\aec1d53c-1b7d-4923-aec5-d6800be5c6b4.jpg",
+      "PackagePath": "staticwebassets\\artist\\aec1d53c-1b7d-4923-aec5-d6800be5c6b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\b59ab618-3e1d-447c-bd92-7e52651d5a52.jpg",
+      "PackagePath": "staticwebassets\\artist\\b59ab618-3e1d-447c-bd92-7e52651d5a52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\b6b60720-e862-4b7e-b116-22946afc810b.jpg",
+      "PackagePath": "staticwebassets\\artist\\b6b60720-e862-4b7e-b116-22946afc810b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\bab8053e-9c3a-4578-a8c3-c6845bd2b41b.jpg",
+      "PackagePath": "staticwebassets\\artist\\bab8053e-9c3a-4578-a8c3-c6845bd2b41b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\bb5c6544-72e7-49e9-86a4-8caa8f5464ca.png",
+      "PackagePath": "staticwebassets\\artist\\bb5c6544-72e7-49e9-86a4-8caa8f5464ca.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\bcb87449-5479-465b-8693-eebeb8005288.jpg",
+      "PackagePath": "staticwebassets\\artist\\bcb87449-5479-465b-8693-eebeb8005288.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\bde560de-37c0-4a7f-ab35-f5ae250e8861.jpg",
+      "PackagePath": "staticwebassets\\artist\\bde560de-37c0-4a7f-ab35-f5ae250e8861.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\c17ecc22-8e40-48b7-9992-e90bf199a9fb.webp",
+      "PackagePath": "staticwebassets\\artist\\c17ecc22-8e40-48b7-9992-e90bf199a9fb.webp"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\c6df3f33-a9fe-4b89-9083-3999cf04015f.jpg",
+      "PackagePath": "staticwebassets\\artist\\c6df3f33-a9fe-4b89-9083-3999cf04015f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\cb899115-2bd0-4b11-8827-a9122baab46c.jpg",
+      "PackagePath": "staticwebassets\\artist\\cb899115-2bd0-4b11-8827-a9122baab46c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\cd93a59c-2668-4896-91d2-a553fb56338b.jpg",
+      "PackagePath": "staticwebassets\\artist\\cd93a59c-2668-4896-91d2-a553fb56338b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\cf37afde-5ea5-40e0-9899-f324567fde53.jpg",
+      "PackagePath": "staticwebassets\\artist\\cf37afde-5ea5-40e0-9899-f324567fde53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\cfc08cd3-905e-4b2c-9e16-b5039c225f5a.jpg",
+      "PackagePath": "staticwebassets\\artist\\cfc08cd3-905e-4b2c-9e16-b5039c225f5a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\d012c35a-afb4-4a62-b9c9-e66ebb8425a8.jpg",
+      "PackagePath": "staticwebassets\\artist\\d012c35a-afb4-4a62-b9c9-e66ebb8425a8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\d1bf605d-d828-466e-af1e-d369f54e66a4.jpg",
+      "PackagePath": "staticwebassets\\artist\\d1bf605d-d828-466e-af1e-d369f54e66a4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\d5a137dc-73f2-4dd1-b13f-36a05d9ecf6f.jpg",
+      "PackagePath": "staticwebassets\\artist\\d5a137dc-73f2-4dd1-b13f-36a05d9ecf6f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\d7e29650-fc1d-4350-9379-19af7481f14b.jpg",
+      "PackagePath": "staticwebassets\\artist\\d7e29650-fc1d-4350-9379-19af7481f14b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\da3b1b17-42f5-4b0b-b71b-1af8cb14d036.jpg",
+      "PackagePath": "staticwebassets\\artist\\da3b1b17-42f5-4b0b-b71b-1af8cb14d036.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\dbb78a97-fd85-4c19-9f4b-7002506a999d.png",
+      "PackagePath": "staticwebassets\\artist\\dbb78a97-fd85-4c19-9f4b-7002506a999d.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\e09755c6-3e0a-48c7-9c13-8dbdadb5b6f7.jpg",
+      "PackagePath": "staticwebassets\\artist\\e09755c6-3e0a-48c7-9c13-8dbdadb5b6f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\e43ef1ef-d512-486f-875c-3d250ab7e2ef.jpeg",
+      "PackagePath": "staticwebassets\\artist\\e43ef1ef-d512-486f-875c-3d250ab7e2ef.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\f2e9dbfc-aaaa-4d00-8857-9b976ff80969.jpg",
+      "PackagePath": "staticwebassets\\artist\\f2e9dbfc-aaaa-4d00-8857-9b976ff80969.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\f6fc39ba-43c7-4dd3-a96b-a02e57284bdc.jpg",
+      "PackagePath": "staticwebassets\\artist\\f6fc39ba-43c7-4dd3-a96b-a02e57284bdc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\artist\\f75513f7-21eb-454a-b6f6-153b08c15efc.jpg",
+      "PackagePath": "staticwebassets\\artist\\f75513f7-21eb-454a-b6f6-153b08c15efc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\chartScript.js",
+      "PackagePath": "staticwebassets\\chartScript.js"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\cod.png",
+      "PackagePath": "staticwebassets\\cod.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\artist1.jpg",
+      "PackagePath": "staticwebassets\\images\\artist1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\artist2.png",
+      "PackagePath": "staticwebassets\\images\\artist2.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\artist3.jpeg",
+      "PackagePath": "staticwebassets\\images\\artist3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\artist4.jpeg",
+      "PackagePath": "staticwebassets\\images\\artist4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\bg-11.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\bg-5.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\bg-6.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\bg-7.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event1.jpg",
+      "PackagePath": "staticwebassets\\images\\event1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event2.jpg",
+      "PackagePath": "staticwebassets\\images\\event2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event3.jpg",
+      "PackagePath": "staticwebassets\\images\\event3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event4.jpg",
+      "PackagePath": "staticwebassets\\images\\event4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event5.jpg",
+      "PackagePath": "staticwebassets\\images\\event5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event6.jpg",
+      "PackagePath": "staticwebassets\\images\\event6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event7.jpg",
+      "PackagePath": "staticwebassets\\images\\event7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\event8.jpg",
+      "PackagePath": "staticwebassets\\images\\event8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\f58e769d404b7a9ff15b04b3b42a42cb.jpg",
+      "PackagePath": "staticwebassets\\images\\f58e769d404b7a9ff15b04b3b42a42cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\ij_680x540.6516599428_tifc3ahz.jpg",
+      "PackagePath": "staticwebassets\\images\\ij_680x540.6516599428_tifc3ahz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.5393192263_ekdi.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.5393192263_ekdi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.5460954945_9tu4.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.5460954945_9tu4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.5560619922_gcjo.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.5560619922_gcjo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.6352267051_13pd.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.6352267051_13pd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.6362798735_n5v6.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.6362798735_n5v6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.6368362117_ep42.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.6368362117_ep42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\il_600x600.6411305390_jz51.jpg",
+      "PackagePath": "staticwebassets\\images\\il_600x600.6411305390_jz51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img12.jpg",
+      "PackagePath": "staticwebassets\\images\\img12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img13.jpg",
+      "PackagePath": "staticwebassets\\images\\img13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img14.webp",
+      "PackagePath": "staticwebassets\\images\\img14.webp"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img16.jpg",
+      "PackagePath": "staticwebassets\\images\\img16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img17.jpg",
+      "PackagePath": "staticwebassets\\images\\img17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img18.jpg",
+      "PackagePath": "staticwebassets\\images\\img18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img19.jpg",
+      "PackagePath": "staticwebassets\\images\\img19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img20.jpg",
+      "PackagePath": "staticwebassets\\images\\img20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img21.jpg",
+      "PackagePath": "staticwebassets\\images\\img21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img24.jpg",
+      "PackagePath": "staticwebassets\\images\\img24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\img29.jpg",
+      "PackagePath": "staticwebassets\\images\\img29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\p.jpg",
+      "PackagePath": "staticwebassets\\images\\p.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\p1.jpg",
+      "PackagePath": "staticwebassets\\images\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\p2.jpg",
+      "PackagePath": "staticwebassets\\images\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\pk-map.jpg",
+      "PackagePath": "staticwebassets\\images\\pk-map.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod1.jpg",
+      "PackagePath": "staticwebassets\\images\\prod1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod2.jpg",
+      "PackagePath": "staticwebassets\\images\\prod2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod3.jpg",
+      "PackagePath": "staticwebassets\\images\\prod3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod4.jpg",
+      "PackagePath": "staticwebassets\\images\\prod4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod5.jpg",
+      "PackagePath": "staticwebassets\\images\\prod5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod6.jpg",
+      "PackagePath": "staticwebassets\\images\\prod6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod7.jpg",
+      "PackagePath": "staticwebassets\\images\\prod7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\prod8.jpg",
+      "PackagePath": "staticwebassets\\images\\prod8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\soraya-irving-OdTPY8s1oew-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\soraya-irving-OdTPY8s1oew-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\images\\vase_7879103.png",
+      "PackagePath": "staticwebassets\\images\\vase_7879103.png"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\146ced0c-3f3d-45b9-ad7c-e39711a70d96.jpg",
+      "PackagePath": "staticwebassets\\products-images\\146ced0c-3f3d-45b9-ad7c-e39711a70d96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\25892cc4-e0e1-469f-b3f8-e55daab41ea9.jpg",
+      "PackagePath": "staticwebassets\\products-images\\25892cc4-e0e1-469f-b3f8-e55daab41ea9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\26cd1bec-851b-4c22-b60b-37b51d9b5be8.jpg",
+      "PackagePath": "staticwebassets\\products-images\\26cd1bec-851b-4c22-b60b-37b51d9b5be8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\3037ff9a-cfdd-4048-b446-b855bf34657e.jpg",
+      "PackagePath": "staticwebassets\\products-images\\3037ff9a-cfdd-4048-b446-b855bf34657e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\3cdf6b09-ee13-41cf-9690-b61f750a5030.jpg",
+      "PackagePath": "staticwebassets\\products-images\\3cdf6b09-ee13-41cf-9690-b61f750a5030.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\3d70c8e0-95fb-446e-a63f-14755e2f908d.jpeg",
+      "PackagePath": "staticwebassets\\products-images\\3d70c8e0-95fb-446e-a63f-14755e2f908d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\3d73ab08-ff30-4957-b377-04b0d5fcc946.jpg",
+      "PackagePath": "staticwebassets\\products-images\\3d73ab08-ff30-4957-b377-04b0d5fcc946.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\4054178f-d8c1-4783-a67c-274aed48302c.jpg",
+      "PackagePath": "staticwebassets\\products-images\\4054178f-d8c1-4783-a67c-274aed48302c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\4971f426-fc98-4f75-8246-6cdbf71ad1fd.jpg",
+      "PackagePath": "staticwebassets\\products-images\\4971f426-fc98-4f75-8246-6cdbf71ad1fd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\4eb2ec91-585b-4e49-af80-ed0f8447be51.jpg",
+      "PackagePath": "staticwebassets\\products-images\\4eb2ec91-585b-4e49-af80-ed0f8447be51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\52b412f7-1898-4ce1-8e8d-10761e38ab0f.jpg",
+      "PackagePath": "staticwebassets\\products-images\\52b412f7-1898-4ce1-8e8d-10761e38ab0f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\597e7eb9-8294-42ed-b6b4-d98f6031e51b.jpg",
+      "PackagePath": "staticwebassets\\products-images\\597e7eb9-8294-42ed-b6b4-d98f6031e51b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\65833b30-ecf6-48f0-903f-0fbdcb5e59c6.jpg",
+      "PackagePath": "staticwebassets\\products-images\\65833b30-ecf6-48f0-903f-0fbdcb5e59c6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\68e289aa-e4f5-406a-b38b-30ce61183503.jfif",
+      "PackagePath": "staticwebassets\\products-images\\68e289aa-e4f5-406a-b38b-30ce61183503.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\6d5c22bb-b657-4128-b52e-8412913bb252.jpg",
+      "PackagePath": "staticwebassets\\products-images\\6d5c22bb-b657-4128-b52e-8412913bb252.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\6ff0484d-edf4-4e18-b3c4-6c94276104f9.jpg",
+      "PackagePath": "staticwebassets\\products-images\\6ff0484d-edf4-4e18-b3c4-6c94276104f9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\70ae64be-02db-45f2-9bbb-a5e978cc1ec0.jpg",
+      "PackagePath": "staticwebassets\\products-images\\70ae64be-02db-45f2-9bbb-a5e978cc1ec0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\71726807-9436-4f95-9a21-c3ec1c87847e.jpg",
+      "PackagePath": "staticwebassets\\products-images\\71726807-9436-4f95-9a21-c3ec1c87847e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\75882892-0ea1-451c-abdc-3c62cbc715fe.jpg",
+      "PackagePath": "staticwebassets\\products-images\\75882892-0ea1-451c-abdc-3c62cbc715fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\7bfc7273-6599-4cec-a3cb-d2da3b254e1d.jpg",
+      "PackagePath": "staticwebassets\\products-images\\7bfc7273-6599-4cec-a3cb-d2da3b254e1d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\82fb7a84-fbe4-45f5-b1a6-5e4b1f093055.jpg",
+      "PackagePath": "staticwebassets\\products-images\\82fb7a84-fbe4-45f5-b1a6-5e4b1f093055.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\8e6c1775-f96d-4394-839c-9c80eb34dee6.jpg",
+      "PackagePath": "staticwebassets\\products-images\\8e6c1775-f96d-4394-839c-9c80eb34dee6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\8fae5995-14d0-4710-9099-fa89575a35ce.jpg",
+      "PackagePath": "staticwebassets\\products-images\\8fae5995-14d0-4710-9099-fa89575a35ce.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\a3c56011-f824-49d5-81b0-0c0500cd3f14.jpg",
+      "PackagePath": "staticwebassets\\products-images\\a3c56011-f824-49d5-81b0-0c0500cd3f14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\a583231d-8973-4bc5-bba1-f26f03bf5759.jpg",
+      "PackagePath": "staticwebassets\\products-images\\a583231d-8973-4bc5-bba1-f26f03bf5759.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\b8c9e081-456f-41f2-bad0-fc3443007cb5.jpg",
+      "PackagePath": "staticwebassets\\products-images\\b8c9e081-456f-41f2-bad0-fc3443007cb5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\ba429d92-23dd-413e-8c71-418e48e66801.jpg",
+      "PackagePath": "staticwebassets\\products-images\\ba429d92-23dd-413e-8c71-418e48e66801.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\c047fcdb-f3a7-4067-b00c-1c52c08c80ca.jpg",
+      "PackagePath": "staticwebassets\\products-images\\c047fcdb-f3a7-4067-b00c-1c52c08c80ca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\c1a94443-bfa9-4018-a23b-26c0138e13fe.jpg",
+      "PackagePath": "staticwebassets\\products-images\\c1a94443-bfa9-4018-a23b-26c0138e13fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\c6788ef3-34f3-4d78-8914-fb9eb5cef66c.jfif",
+      "PackagePath": "staticwebassets\\products-images\\c6788ef3-34f3-4d78-8914-fb9eb5cef66c.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\d49c706d-29a8-452a-afc8-edea03f09f26.jpg",
+      "PackagePath": "staticwebassets\\products-images\\d49c706d-29a8-452a-afc8-edea03f09f26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\de8e72c8-142b-483a-a72d-55152de453f3.jpg",
+      "PackagePath": "staticwebassets\\products-images\\de8e72c8-142b-483a-a72d-55152de453f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\e187a50c-8a74-43ed-a3bc-774112263bd1.jpg",
+      "PackagePath": "staticwebassets\\products-images\\e187a50c-8a74-43ed-a3bc-774112263bd1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\ef016fa7-bc82-4d41-bce7-ae3d35f13580.jpg",
+      "PackagePath": "staticwebassets\\products-images\\ef016fa7-bc82-4d41-bce7-ae3d35f13580.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\f59e313e-23a5-48a9-818b-f46251e72572.jpg",
+      "PackagePath": "staticwebassets\\products-images\\f59e313e-23a5-48a9-818b-f46251e72572.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\f81b7eaa-ca88-4821-b965-cf4ba2b15802.jpg",
+      "PackagePath": "staticwebassets\\products-images\\f81b7eaa-ca88-4821-b965-cf4ba2b15802.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\f84405aa-5692-487d-a2c2-58a0e76e4455.jpg",
+      "PackagePath": "staticwebassets\\products-images\\f84405aa-5692-487d-a2c2-58a0e76e4455.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\products-images\\fa6be8c2-b0e0-4d15-b2f3-d6d4de832c89.jpg",
+      "PackagePath": "staticwebassets\\products-images\\fa6be8c2-b0e0-4d15-b2f3-d6d4de832c89.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\qd1p2yaogl41ymtozppc.webp",
+      "PackagePath": "staticwebassets\\qd1p2yaogl41ymtozppc.webp"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\scrollToSection.js",
+      "PackagePath": "staticwebassets\\scrollToSection.js"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\stripe.svg",
+      "PackagePath": "staticwebassets\\stripe.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dawood\\Downloads\\full-stack-DASTKARI - Copy\\View\\wwwroot\\tidio-init.js",
+      "PackagePath": "staticwebassets\\tidio-init.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.View.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.View.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.View.props",
+      "PackagePath": "build\\View.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.View.props",
+      "PackagePath": "buildMultiTargeting\\View.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.View.props",
+      "PackagePath": "buildTransitive\\View.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

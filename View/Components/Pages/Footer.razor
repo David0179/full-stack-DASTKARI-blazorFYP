@@ -1,0 +1,25 @@
+﻿@code {
+    private int CurrentYear => DateTime.Now.Year;
+}
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h1 class="footer-logo-text">Dastkari</h1>
+            <p class="footer-tagline">Celebrating Pakistani Art and Craft</p>
+        </div>
+        <div class="footer-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links-list">
+                <li><a href="#about"><span class="material-icons">info</span> About Us</a></li>
+                <li><a href="#products"><span class="material-icons">shopping_cart</span> Shop</a></li>
+                <li><a href="/contact-us"><span class="material-icons">mail</span> Contact Us</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; @CurrentYear Dastkari. All rights reserved.</p>
+    </div>
+
+
+</footer>

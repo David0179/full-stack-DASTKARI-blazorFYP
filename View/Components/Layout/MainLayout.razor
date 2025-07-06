@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+
+<div class="app-layout d-flex flex-column min-vh-100">
+    <NavMenu />
+    <main class="flex-grow-1">
+        <article>
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui" class="alert alert-danger text-center fixed-bottom m-0 rounded-0">
+    An unhandled error has occurred.
+    <a href="" class="reload text-white text-decoration-underline">Reload</a>
+    <a class="dismiss text-white ms-3" style="cursor:pointer;">🗙</a>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("loadTidio");
+        }
+    }
+}

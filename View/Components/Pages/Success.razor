@@ -1,0 +1,28 @@
+﻿@page "/success"
+@inject NavigationManager NavManager
+@inject IOrderService OrderService
+@inject ICartService CartService
+
+<h2 style="color: #43A047;">Payment Successful!</h2>
+<p>Thank you for your order. We will process it shortly.</p>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var cartItems = CartService.GetCartItems();
+
+        foreach (var item in cartItems)
+        {
+            var order = new OrderModel
+            {
+                ProductId = item.Product.Id,
+                Quantity = item.Quantity,
+                PaymentMethod = "Stripe" // or "COD" if CashOnDelivery
+            };
+
+            await OrderService.SaveOrderAsync(order);
+        }
+
+        CartService.ClearCart(); // optional
+    }
+}

@@ -1,0 +1,113 @@
+﻿body {
+    background: url('/images/bg-7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    margin-top: 130px;
+}
+
+
+    .login-container h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        border: none;
+        border-bottom: 2px solid white;
+        background: none;
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        outline: none;
+    }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: white; /* White with slight transparency */
+    font-size: 14px;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+    .options a:hover {
+        text-decoration: underline;
+    }
+
+.login-button, .home-button {
+    background-color: #FF5722;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.home-button {
+    background-color: #E64A19;
+}
+
+.login-button:hover {
+    background-color: #E64A19;
+}
+
+.home-button:hover {
+    background-color: #D84315;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+    p a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        p a:hover {
+            text-decoration: underline;
+        }

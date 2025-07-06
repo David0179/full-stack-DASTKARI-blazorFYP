@@ -1,0 +1,19 @@
+﻿@page "/login"
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Google
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h3>Redirecting to Google Login...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var authProperties = new AuthenticationProperties
+        {
+            RedirectUri = "/after-login" // You can change this to another route if needed
+        };
+
+        await HttpContextAccessor.HttpContext.ChallengeAsync(
+            GoogleDefaults.AuthenticationScheme, authProperties);
+    }
+}

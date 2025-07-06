@@ -1,0 +1,82 @@
+﻿@using Entities
+@inject IArtistService ArtistService
+
+<div class="container">
+    <h2 class="title">Featured Artisans</h2>
+    <div class="underline"></div>
+    <div class="artisans">
+
+        @foreach (var artisan in artisans)
+        {
+            <div class="artisan-card">
+                <a href="@($"/profile/{artisan.Id}")" class="name-link" style="text-decoration: none;">
+                    <img src="@artisan.ImageUrl" alt="@artisan.Name" class="artisan-img" />
+                    <h3 class="name" style="color: #ff5500;">@artisan.Name</h3>
+                </a>
+
+                <p class="craft">@artisan.Location</p>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+<style>
+    .name-link {
+        text-decoration: none;
+    }
+
+    .name {
+        color: gray;
+        transition: color 0.3s ease;
+    }
+
+    .name-link:hover .name {
+        color: orange;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .artisans {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .artisan-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 8px;
+        width: 250px;
+        text-align: center;
+        background: #fff;
+        transition: transform 0.3s ease;
+    }
+
+        .artisan-card:hover {
+            transform: scale(1.05);
+        }
+
+    .artisan-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+</style>
+
+@inject IArtistService ArtistService
+
+@code {
+    private List<ArtistDropdownModel> artisans = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        artisans = await ArtistService.GetApprovedArtists();
+    }
+}

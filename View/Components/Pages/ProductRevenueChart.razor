@@ -1,0 +1,43 @@
+﻿@inject IJSRuntime JS
+@inject IOrderService OrderService
+
+<h3>Product Revenue</h3>
+
+<canvas id="revenueChart" width="500" height="230"></canvas>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
+@foreach (var item in salesData)
+{
+    <div class="col">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body">
+                <h6 class="card-title fw-semibold text-primary">@item.ProductName</h6>
+                <p class="card-text mb-0 text-muted">Total Revenue: <span class="fw-bold text-dark">Rs. @item.TotalRevenue</span></p>
+                <p class="card-text"><small class="text-secondary">Units Sold: @item.TotalUnitsSold</small></p>
+            </div>
+        </div>
+    </div>
+}
+</div>
+
+@code {
+
+      List<ProductSalesData> salesData;
+
+    protected override void OnInitialized()
+    {
+        salesData = OrderService.GetProductSalesData();
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var data = OrderService.GetProductSalesData();
+
+            var labels = data.Select(p => p.ProductName).ToArray();
+            var revenue = data.Select(p => (double)p.TotalRevenue).ToArray();
+
+            await JS.InvokeVoidAsync("renderBarChart", "revenueChart", labels, revenue);
+        }
+    }
+}

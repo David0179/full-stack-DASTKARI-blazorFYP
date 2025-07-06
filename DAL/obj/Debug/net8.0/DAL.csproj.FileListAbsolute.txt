@@ -1,0 +1,165 @@
+C:\Users\Aqsa\Desktop\Solution\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\Solution\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\Solution\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\Solution\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\Solution\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\Solution\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\copy-2\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\copy-2\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\copy-2\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\copy-2\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\copy-2\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\FYPp\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\FYPp\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYPp\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYPp\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYPp\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYPp\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.deps.json
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\DAL.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\bin\Debug\net8.0\Entities.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\refint\DAL.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\DAL.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\DAL\obj\Debug\net8.0\ref\DAL.dll

@@ -1,0 +1,228 @@
+﻿@-webkit-keyframes btn {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.04);
+    }
+
+    90% {
+        transform: scale(0.96);
+    }
+}
+
+@keyframes btn {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.04);
+    }
+
+    90% {
+        transform: scale(0.96);
+    }
+}
+
+@-webkit-keyframes fish {
+    0%, 70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fish {
+    0%, 70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+/* General Styles */
+.fish, .fish-shadow {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    position: absolute;
+    top: -145px;
+    left: -177px;
+    animation: fish 3s forwards ease-in-out;
+}
+
+    .fish path, .fish-shadow path {
+        fill: #FF4545;
+    }
+
+        .fish path:hover, .fish-shadow path:hover {
+            fill: #ff6100;
+        }
+
+.fish-shadow-con {
+    opacity: 0.2;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fish-shadow {
+    top: -125px;
+    left: -157px;
+    opacity: 0.4;
+    filter: url("#goo");
+}
+
+.containerfish {
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 25px 20px 10px;
+    width: 90%;
+    max-width: 620px;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card_title {
+    font-size: 28px;
+    font-family: 'MV Boli';
+    text-align: center;
+    color: orange;
+}
+
+.card_button {
+    width: 80%;
+    max-width: 300px;
+    margin: 25px auto 10px;
+    display: block;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(#ff6100, rgba(255, 80, 80, 1));
+    border: #ff6100;
+    box-shadow: 0 2px 12px -3px rgba(255, 80, 80, 1);
+    transition: all 0.3s;
+    opacity: 0.9;
+}
+
+    .card_button:hover {
+        opacity: 1;
+        box-shadow: 0 2px 2px -3px rgba(255, 80, 80, 1);
+    }
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+}
+
+.input_field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .fish, .fish-shadow {
+        max-width: 400px;
+        top: -100px;
+        left: -100px;
+    }
+
+    .containerfish {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card_title {
+        font-size: 24px;
+    }
+
+    .input {
+        flex: 1 1 100%;
+    }
+
+    .card_button {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fish, .fish-shadow {
+        max-width: 300px;
+        top: -80px;
+        left: -80px;
+    }
+
+    .containerfish {
+        width: 100%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .card_title {
+        font-size: 20px;
+    }
+
+    .input {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,74 @@
+﻿@rendermode InteractiveServer
+@inject NavigationManager Nav
+@inject IProductServices productService
+
+<div class="search-bar d-flex align-items-center mt-2 flex-grow-1 mx-3 position-relative">
+    <input type="text"
+           class="form-control border-0"
+           placeholder="Search by Name Artist or Product..."
+           @bind="searchQuery"
+           @oninput="OnSearchChanged" />
+
+    <button class="btn search-btn1" @onclick="SearchProducts">
+        <span class="material-icons">search</span>
+    </button>
+
+    @if (showSuggestions && filteredSuggestions?.Count > 0)
+    {
+        <ul class="list-group position-absolute w-100 z-index-10 suggestion-list">
+            @foreach (var item in filteredSuggestions)
+            {
+                <li class="list-group-item list-group-item-action"
+                    @onclick="() => HandleSuggestionClick(item)">
+                    <strong>@item.Name</strong> by <em>@item.ArtistName</em>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+
+@code {
+    private string searchQuery = "";
+    private List<ProductsModel> filteredSuggestions = new();
+    private bool showSuggestions = false;
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        searchQuery = e.Value?.ToString();
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            filteredSuggestions = productService.GetProductsBySearch(searchQuery);
+            showSuggestions = filteredSuggestions.Any();
+        }
+        else
+        {
+            showSuggestions = false;
+        }
+    }
+
+    private void SearchProducts()
+    {
+        var products = string.IsNullOrWhiteSpace(searchQuery)
+            ? productService.GetData()
+            : productService.GetProductsBySearch(searchQuery);
+
+        Console.WriteLine($"Search query: {searchQuery}");
+        Console.WriteLine($"Results count: {products.Count}");
+    }
+
+    private void HandleSuggestionClick(ProductsModel item)
+    {
+        if (item.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+        {
+            Nav.NavigateTo($"/products?selectedProductId={item.Id}");
+        }
+        else if (item.ArtistName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+        {
+            Nav.NavigateTo($"/profile/{item.ArtistId}");
+        }
+
+        searchQuery = "";
+        showSuggestions = false;
+    }
+}

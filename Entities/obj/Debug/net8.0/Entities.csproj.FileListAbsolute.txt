@@ -1,0 +1,126 @@
+C:\Users\Aqsa\Desktop\Solution\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\Solution\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\Solution\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\Solution\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\copy-2\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\copy-2\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYPp\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\FYPp\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYPp\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYPp\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Entities\obj\Debug\net8.0\ref\Entities.dll

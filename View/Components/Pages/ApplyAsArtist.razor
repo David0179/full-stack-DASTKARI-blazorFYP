@@ -1,0 +1,207 @@
+﻿@page "/apply-as-artist"
+@inject Services.IArtistService ArtistService
+@inject IWebHostEnvironment Env
+@rendermode InteractiveServer
+@attribute [Authorize]
+@using DAL
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<div class="form-container">
+    <h2 class="form-title">Join Dastkari as an Artist</h2>
+
+    @if (!isSubmitted)
+    {
+        <div class="form-content">
+            @if (!string.IsNullOrEmpty(notificationMessage))
+            {
+                <div class="@notificationCss alert-notification" role="alert">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <span>@notificationMessage</span>
+                </div>
+            }
+
+            <EditForm Model="artistModel" OnValidSubmit="HandleSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="validation-summary" />
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label>Full Name *</label>
+                        <InputText class="form-control" @bind-Value="artistModel.ArtistName" placeholder="Enter your full name" />
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label>Years of Experience *</label>
+                        <InputNumber class="form-control" @bind-Value="artistModel.YearsOfExperience" placeholder="Number of years" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Location *</label>
+                    <InputText class="form-control" @bind-Value="artistModel.Location" placeholder="City, Country" />
+                </div>
+
+                <div class="form-group">
+                    <label>Contact Information/Address *</label>
+                    <InputTextArea class="form-control" rows="3" @bind-Value="artistModel.ProfileDescription"
+                                   placeholder="Your contact details and address" />
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label>Profile Photo</label>
+                        <div class="file-upload-container">
+                            <label class="file-upload-label">
+                                <i class="bi bi-cloud-arrow-up"></i>
+                                <span>Click to upload profile photo</span>
+                                <InputFile class="d-none" OnChange="@(e => OnInputFileChange(e, "profile"))" />
+                            </label>
+                            @if (!string.IsNullOrEmpty(artistModel.ArtistImageUrl))
+                            {
+                                <div class="image-preview mt-3">
+                                    <img src="@artistModel.ArtistImageUrl" alt="Artist Image" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label>Your Artwork Sample</label>
+                        <div class="file-upload-container">
+                            <label class="file-upload-label">
+                                <i class="bi bi-cloud-arrow-up"></i>
+                                <span>Click to upload artwork sample</span>
+                                <InputFile class="d-none" OnChange="@(e => OnInputFileChange(e, "work"))" />
+                            </label>
+                            @if (!string.IsNullOrEmpty(artistModel.WorkImage))
+                            {
+                                <div class="image-preview mt-3">
+                                    <img src="@artistModel.WorkImage" alt="Work Image" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="form-submit">
+                    <button type="submit" class="styled-submit-btn" disabled="@isUploading">
+                        @if (isUploading)
+                        {
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            <span> Processing...</span>
+                        }
+                        else
+                        {
+                            <span>Submit Application</span>
+                        }
+                    </button>
+
+                </div>
+            </EditForm>
+        </div>
+    }
+    else
+    {
+        <div class="success-message">
+            <div class="success-icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h3>Application Submitted!</h3>
+            <p>
+                Thank you for your interest in joining Dastkari. Our team will review your application and contact you soon.
+            </p>
+
+            <a href="/">
+                <button class="btn btn-outline-primary">
+                    Back to Home
+                </button>
+            </a>
+        </div>
+    }
+</div>
+
+
+@code {
+    private ArtistApplicationModel artistModel = new ArtistApplicationModel();
+    private bool isSubmitted = false;
+    private bool isUploading = false;
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e, string imageType)
+    {
+        isUploading = true;
+
+        var file = e.File;
+        var uploadsFolder = Path.Combine(Env.WebRootPath, "artist");
+
+        if (!Directory.Exists(uploadsFolder))
+        {
+            Directory.CreateDirectory(uploadsFolder);
+        }
+
+        var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.Name)}";
+        var filePath = Path.Combine(uploadsFolder, fileName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.OpenReadStream(5 * 1024 * 1024).CopyToAsync(stream); // 5MB max
+        }
+
+        var relativeUrl = $"/artist/{fileName}";
+
+        // Set the correct image path
+        if (imageType == "profile")
+        {
+            artistModel.ArtistImageUrl = relativeUrl;
+        }
+        else if (imageType == "work")
+        {
+            artistModel.WorkImage = relativeUrl;
+        }
+
+        isUploading = false;
+    }
+
+    private string? notificationMessage;
+    private string notificationCss = "";
+
+    public async Task HandleSubmit()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity.IsAuthenticated)
+            {
+                var email = user.FindFirst(c => c.Type == System.Security.Claims.ClaimTypes.Email)?.Value;
+
+                if (!string.IsNullOrEmpty(email))
+                {
+                    UserDAL userDal = new UserDAL(); // better: inject this
+                    var current = userDal.GetUserByEmail(email);
+                    artistModel.UserId = current?.Id ?? 0;
+                }
+            }
+
+            await ArtistService.SubmitApplication(artistModel); // add await
+            isSubmitted = true;
+
+            notificationMessage = "Application submitted successfully!";
+            notificationCss = "alert alert-success";
+        }
+        catch (Exception ex)
+        {
+            notificationMessage = "❌ Error submitting application: " + ex.Message;
+            notificationCss = "alert alert-danger";
+
+            Console.WriteLine("Error submitting artist application: " + ex.Message);
+        }
+    }
+
+
+}
+

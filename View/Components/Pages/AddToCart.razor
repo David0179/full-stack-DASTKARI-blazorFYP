@@ -1,0 +1,318 @@
+﻿@page "/addtocart"
+@inject ICartService CartService
+@inject IStripePaymentService StripePaymentService
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+<div class="cart-page" style="font-family: 'Segoe UI', sans-serif; max-width: 1000px; margin: auto; padding: 2rem; background-color: #fff8f0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <div class="cart-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #FFA726; padding-bottom: 1rem;">
+        <h1 class="cart-title" style="color: #FB8C00; font-size: 2.2rem;">Your Shopping Cart</h1>
+        <div class="cart-summary">
+            @if (CartService.GetCartItems().Any())
+            {
+                <span class="item-count" style="font-weight: bold; color: #FF7043;">@CartService.GetCartItems().Count() items</span>
+            }
+        </div>
+    </div>
+
+    @if (!CartService.GetCartItems().Any())
+    {
+        <div class="empty-cart" style="text-align: center; padding: 4rem 2rem;">
+            <div class="empty-cart-icon" style="color: #FF7043;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/>
+                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/>
+                </svg>
+            </div>
+            <h3 style="color: #F57C00;">Your cart feels lonely</h3>
+            <p>Looks like you haven't added anything to your cart yet</p>
+            <a href="/products" class="btn btn-primary" style="background-color: #FFA726; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Continue Shopping</a>
+        </div>
+    }
+    else
+    {
+        <div class="cart-items" style="margin-top: 2rem;">
+            @foreach (var item in CartService.GetCartItems())
+            {
+                <div class="cart-item" @key="item.Product.Id" style="display: flex; border-bottom: 1px solid #FFE0B2; padding: 1rem 0;">
+                    <div class="product-image" style="flex: 0 0 120px;">
+                        <img src="@item.Product.ImageUrl" alt="@item.Product.Name" style="width: 100px; height: auto; border-radius: 8px;" />
+                    </div>
+                    <div class="product-details" style="margin-left: 1rem; flex-grow: 1;">
+                        <h3 class="product-name" style="color: #FB8C00; font-size: 1.2rem;">@item.Product.Name</h3>
+                        <p class="product-description" style="color: #555;">@item.Product.Description</p>
+                        <div class="product-price" style="color: #FF7043; font-weight: bold;">
+                            @item.Product.Price USD × @item.Quantity =
+                            @(item.Product.Price * item.Quantity) USD
+                        </div>
+                    </div>
+                    <div class="product-actions" style="align-self: center;">
+                        <button class="remove-btn" @onclick="() => Remove(item.Product)" style="background: none; border: none; color: #FF7043; cursor: pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="cart-footer" style="margin-top: 2rem; text-align: right;">
+            <div class="cart-total" style="font-size: 1.2rem; color: #F57C00; font-weight: bold;">
+                <span>Subtotal:</span>
+                <span class="total-amount">@CartService.GetCartItems().Sum(item => item.Product.Price * item.Quantity) USD</span>
+            </div>
+            <div class="cart-actions" style="margin-top: 1rem;">
+                <a href="/products" class="btn btn-outline" style="border: 2px solid #FB8C00; color: #FB8C00; padding: 10px 20px; margin-right: 10px; border-radius: 6px; text-decoration: none;">Continue Shopping</a>
+               <button @onclick="CashOnDelivery" class="btn btn-cod">
+  <img src="/cod.png" alt="COD" class="icon"> Cash on Delivery
+</button>
+
+<button @onclick="ProceedToCheckout" class="btn btn-stripe">
+  <img src="/stripe.svg" alt="Stripe" class="icon"> Pay with Stripe
+</button>  </div>
+        </div>
+    }
+</div>
+
+@code {
+    private void Remove(ProductsModel item)
+    {
+        CartService.RemoveFromCart(item);
+        StateHasChanged();
+    }
+
+    private async Task ProceedToCheckout()
+{
+    var cartItems = CartService.GetCartItems();
+    if (!cartItems.Any()) return;
+
+    decimal totalAmount = cartItems.Sum(item => item.Product.Price * item.Quantity);
+    string description = $"Dastkari Order - {cartItems.Count} items";
+
+    var url = StripePaymentService.CreateCheckoutSession(totalAmount, description);
+    NavManager.NavigateTo(url, true); // Redirects to Stripe
+}
+
+    private void CashOnDelivery()
+    {
+        NavManager.NavigateTo("/success");
+    }
+}
+
+
+<style>
+
+    .btn { display: flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 6px; font-weight: 600; }
+.btn-cod { background-color: #F57C00; color: white; border: none; }
+.btn-stripe { background-color:  #F57C00; color: white; border: none; }
+.icon { width: 42px; height: 42px; }
+
+.btn:hover{
+    border: 2px solid #F57C00;
+}
+    .cart-page {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .cart-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 1rem;
+    }
+
+    .cart-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .item-count {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .empty-cart {
+        text-align: center;
+        padding: 4rem 0;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .empty-cart-icon {
+        color: #ccc;
+        margin-bottom: 1.5rem;
+    }
+
+    .empty-cart h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #444;
+    }
+
+    .empty-cart p {
+        color: #777;
+        margin-bottom: 2rem;
+    }
+
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cart-item {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cart-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .product-image {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .product-details {
+        flex-grow: 1;
+    }
+
+    .product-name {
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
+        color: #333;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0 0 1rem 0;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2a52be;
+    }
+
+    .product-actions {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .remove-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #999;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+
+    .remove-btn:hover {
+        color: #ff4444;
+        background: rgba(255, 68, 68, 0.1);
+    }
+
+    .cart-footer {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eaeaea;
+    }
+
+    .cart-total {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .total-amount {
+        font-weight: 600;
+        margin-left: 1rem;
+        color: #2a52be;
+    }
+
+    .cart-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .btn-outline {
+        border: 1px solid #2a52be;
+        color: #2a52be;
+        background: white;
+    }
+
+    .btn-outline:hover {
+        background: rgba(42, 82, 190, 0.05);
+    }
+
+    .btn-primary {
+        background: #2a52be;
+        color: white;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background: #1a42a8;
+    }
+
+    @@media (max-width: 768px) {
+        .cart-item {
+            flex-direction: column;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+        }
+        
+        .cart-actions {
+            flex-direction: column;
+        }
+        
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>

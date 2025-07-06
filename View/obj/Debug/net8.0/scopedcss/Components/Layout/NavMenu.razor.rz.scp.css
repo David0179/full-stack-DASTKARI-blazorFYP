@@ -1,0 +1,263 @@
+html[b-4qidup8cmh] {
+    scroll-behavior: smooth;
+}
+/* General styles */
+body[b-4qidup8cmh] {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* App styling */
+.app[b-4qidup8cmh] {
+    width: 100%;
+    padding-top: 65px; /* Adjusted padding-top to avoid header overlap */
+}
+
+.custom-btn[b-4qidup8cmh] {
+    display: inline-flex;
+    align-items:end;
+    gap: 5px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #ff5500;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+    .custom-btn span[b-4qidup8cmh] {
+        color: white !important; /* Make sure text is also white */
+    }
+    .custom-btn i[b-4qidup8cmh] {
+        color: white;
+        transition: color 0.3s ease;
+    }
+    .custom-btn:hover span[b-4qidup8cmh] {
+        color: #ff5500 !important; /* Make sure text is also white */
+    }
+    .custom-btn:hover[b-4qidup8cmh] {
+        background-color: transparent;
+        border-color: #ff5500;
+        color: #ff5500;
+    }
+
+        .custom-btn:hover i[b-4qidup8cmh] {
+            color: #ff5500;
+        }
+
+
+/* Header styling */
+.header[b-4qidup8cmh] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff; /* Ensure header has a background */
+    transition: opacity 0.3s ease-in-out;
+}
+
+    /* Hide header content when scrolling */
+    .header.scroll-hidden .logo[b-4qidup8cmh],
+    .header.scroll-hidden .search-bar[b-4qidup8cmh],
+    .header.scroll-hidden .user-actions[b-4qidup8cmh] {
+        display: none; /* Hide logo, search bar, and user actions on scroll */
+    }
+
+/* Logo styling */
+.logo[b-4qidup8cmh] {
+    font-size: 28px;
+    color: #f16522;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+
+/* Navbar Container */
+
+.simple-nav[b-4qidup8cmh] {
+    
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-list[b-4qidup8cmh] {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-right: 400px;
+   
+}
+
+    .nav-list li a[b-4qidup8cmh] {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        position: relative;
+        transition: color 0.3s ease;
+        color: #ff4800;
+    }
+
+        .nav-list li a:hover[b-4qidup8cmh] {
+            color: #f16522;
+        }
+
+        .nav-list li a[b-4qidup8cmh]::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f16522;
+            transition: width 0.3s ease;
+        }
+
+        .nav-list li a:hover[b-4qidup8cmh]::after {
+            width: 100%;
+        }
+
+.user-link[b-4qidup8cmh] {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #f16522;
+    border: 2px solid #f16522;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+    .user-link:hover[b-4qidup8cmh] {
+        background-color: #f16522;
+        color: white;
+        box-shadow: 0 4px 10px rgba(160, 100, 65, 0.3);
+        transform: translateY(-2px);
+    }
+
+.icon[b-4qidup8cmh] {
+    font-size: 1.5rem;
+    color: #141414;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+    .icon:hover[b-4qidup8cmh] {
+        color: #f16522;
+        transform: scale(1.2);
+    }
+
+/* Mobile styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse[b-4qidup8cmh] {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .navbar-nav[b-4qidup8cmh] {
+        flex-direction: column;
+    }
+
+    .nav-item[b-4qidup8cmh] {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+
+/* Desktop styles */
+/* Make the navbar sticky */
+.sticky-navbar[b-4qidup8cmh] {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    width: 100%; /* Ensure it takes up the full width */
+    background-color: white; /* Ensure the navbar has a background */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border for separation */
+}
+
+/* Flexbox layout for header */
+.header[b-4qidup8cmh] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px; /* Adjust padding for spacing */
+    background-color: white;
+   
+}
+
+/* Centering the nav links inside the navbar */
+.sticky-navbar .navbar-nav[b-4qidup8cmh] {
+    display: flex;
+  
+    width: 100%;
+    margin-left: 900px;
+}
+
+/* Remove the default padding of navbar list items */
+.nav-links[b-4qidup8cmh] {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    
+    
+}
+
+    .nav-links li[b-4qidup8cmh] {
+        padding: 10px;
+    }
+
+    .nav-links a[b-4qidup8cmh] {
+        text-decoration: none;
+        color: black;
+    }
+
+/* Hamburger button (visible only on small screens) */
+.navbar-toggler[b-4qidup8cmh] {
+    display: none;
+}
+.home[b-4qidup8cmh]{
+    margin-left:300px;
+}
+@media (max-width: 992px) {
+    .navbar-toggler[b-4qidup8cmh] {
+        display: block; /* Show hamburger button on small screens */
+    }
+
+    .nav-list[b-4qidup8cmh] {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a.cart-link[b-4qidup8cmh],
+a.cart-link:visited[b-4qidup8cmh],
+a.cart-link:hover[b-4qidup8cmh],
+a.cart-link:active[b-4qidup8cmh] {
+    text-decoration: none !important;
+    color: inherit !important;
+}

@@ -1,0 +1,510 @@
+﻿@page "/inventoryadmin"
+@using View.Components.Layout
+@layout AdminLayout
+@inject Services.IArtistService ArtistService
+@attribute [Authorize(Roles = "Admin")]
+@using System.ComponentModel.DataAnnotations
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Authorization
+@inject IWebHostEnvironment Env 
+@inject IJSRuntime JSRuntime
+
+
+
+<div class="applications-dashboard">
+    <!-- Header Section -->
+    <div class="dashboard-header">
+        <h2 class="dashboard-title">
+            <i class="fas fa-user-check me-2"></i>Pending Artist Applications
+        </h2>
+        <div class="dashboard-subtitle">
+            Review and manage artist submissions
+            <span class="badge bg-primary ms-2">
+                @applications?.Count() Pending
+            </span>
+        </div>
+    </div>
+
+    <!-- Loading/Empty States -->
+    <div class="dashboard-content">
+        @if (applications == null)
+        {
+            <div class="loading-state">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading applications...</p>
+            </div>
+        }
+        else if (!applications.Any())
+        {
+            <div class="empty-state">
+                <i class="far fa-folder-open"></i>
+                <h3>No pending applications</h3>
+                <p>All applications have been processed.</p>
+            </div>
+        }
+        else
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Artist Name</th>
+                        <th>Contact</th>
+                        <th>Location</th>
+                        <th>Years Experience</th>
+                        <th>Image</th>
+                        <th>Work Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var app in applications)
+                    {
+                        <tr>
+                            <td>@app.ArtistName</td>
+                            <td>@app.ProfileDescription</td>
+                            <td>@app.Location</td>
+                            <td>@app.YearsOfExperience</td>
+                            <td>
+                                @if (!string.IsNullOrWhiteSpace(app.ArtistImageUrl))
+                                {
+                                    <img src="@app.ArtistImageUrl" alt="Artist Image" width="100" />
+                                }
+                                else
+                                {
+                                    <span class="text-muted">N/A</span>
+                                }
+                            </td>
+                            <td>
+                                @if (!string.IsNullOrWhiteSpace(app.WorkImage))
+                                {
+                                    <img src="@app.WorkImage" alt="Work Image" width="100" />
+                                }
+                                else
+                                {
+                                    <span class="text-muted">N/A</span>
+                                }
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-sm me-2" @onclick="() => Approve(app.Id)">Approve</button>
+                                <button class="btn btn-danger btn-sm" @onclick="() => ShowRejectReason(app.Id)">Reject</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        @if (showRejectModal)
+        {
+            <div class="modal fade show d-block" tabindex="-1" role="dialog" style="background-color: rgba(0, 0, 0, 0.5); z-index: 1050;">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content shadow-lg rounded-4">
+                        <div class="modal-header bg-danger text-white rounded-top-4">
+                            <h5 class="modal-title">Reject Application</h5>
+                            <button type="button" class="btn-close btn-close-white" aria-label="Close" @onclick="CancelReject"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="form-label">Reason for rejection:</label>
+                            <textarea class="form-control mb-3" rows="4" @bind="rejectReason" placeholder="Kindly explain the reason..."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger px-4" @onclick="ConfirmReject">
+                                <i class="bi bi-x-circle me-2"></i>Confirm Reject
+                            </button>
+                            <button class="btn btn-outline-secondary px-4" @onclick="CancelReject">
+                                <i class="bi bi-x-lg me-2"></i>Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(notificationMessage))
+        {
+            <div class="@notificationCss alert alert-dismissible fade show mt-3" role="alert" style="max-width: 500px;">
+                @notificationMessage
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" @onclick="() => notificationMessage = null"></button>
+            </div>
+        }
+
+    </div>
+</div>
+
+@if (approvedArtists == null)
+{
+    <div class="text-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3">Loading approved artists...</p>
+    </div>
+}
+else if (!approvedArtists.Any())
+{
+    <p class="text-muted text-center mt-5">No approved artists found.</p>
+}
+else
+{
+    <h2 class="text-3xl fw-bold mt-5 mb-4 text-center text-primary">Approved Artists</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var artist in approvedArtists)
+        {
+            <div class="col">
+                <div class="card shadow-sm border-0 rounded-4 h-100 hover-shadow transition">
+                    <div class="card-body d-flex flex-column flex-md-row align-items-start gap-3">
+
+                        @if (!string.IsNullOrEmpty(artist.ImageUrl))
+                        {
+                            <img src="@artist.ImageUrl" alt="Artist Image" width="120" class="rounded-circle border shadow-sm" style="object-fit: cover; height: 120px;" />
+                        }
+
+                        <div class="flex-grow-1">
+                            <h5 class="card-title mb-1 fw-semibold text-dark">@artist.Name</h5>
+                            <p class="card-text text-muted small">@artist.Description</p>
+                            <p class="card-text mb-1"><strong class="text-secondary">📍 Location:</strong> @artist.Location</p>
+
+                            <a href="@artist.ProfileLink" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                                View Profile
+                            </a>
+
+                            @if (!string.IsNullOrEmpty(artist.workImage))
+                            {
+                                <div class="mt-3">
+                                    <label class="form-label text-muted small">Work Image:</label><br />
+                                    <img src="@artist.workImage" alt="Work" width="140" class="rounded-3 shadow-sm border" style="object-fit: cover; height: 100px;" />
+                                </div>
+                            }
+                        </div>
+
+                        <div class="d-flex flex-column gap-2 mt-2">
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => ConfirmRemove(artist.Id)">
+                                Remove
+                            </button>
+                            <button class="btn btn-sm btn-outline-success" @onclick="() => ShowEditModal(artist)">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}
+
+@if (showEditModal)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4 position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close" @onclick="CancelEdit"></button>
+                <h4 class="mb-4 fw-semibold">Edit Artist</h4>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Name</label>
+                        <input class="form-control" @bind="editArtist.Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Location</label>
+                        <input class="form-control" @bind="editArtist.Location" />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" rows="3" @bind="editArtist.Description"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Profile Link</label>
+                        <input class="form-control" @bind="editArtist.ProfileLink" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Profile Image</label><br />
+                        @if (!string.IsNullOrEmpty(editArtist.ImageUrl))
+                        {
+                            <img src="@editArtist.ImageUrl" width="100" class="mb-2 rounded" />
+                        }
+                        <InputFile OnChange="@((e) => OnEditFileChange(e, "profile"))" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Work Image</label><br />
+                        @if (!string.IsNullOrEmpty(editArtist.workImage))
+                        {
+                            <img src="@editArtist.workImage" width="100" class="mb-2 rounded" />
+                        }
+                        <InputFile OnChange="@((e) => OnEditFileChange(e, "work"))" />
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <button class="btn btn-success me-2" @onclick="SaveEdit">Save</button>
+                    <button class="btn btn-secondary" @onclick="CancelEdit">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<ArtistApplicationModel> applications;
+    private string notificationMessage;
+    private string notificationCss;
+
+    private bool showRejectModal = false;
+    private int rejectApplicationId;
+    private string rejectReason = "";
+
+
+    private bool showEditModal = false;
+private ArtistDropdownModel editArtist = new ArtistDropdownModel();
+
+private void ShowEditModal(ArtistDropdownModel artist)
+{
+    editArtist = new ArtistDropdownModel
+    {
+        Id = artist.Id,
+        Name = artist.Name,
+        Description = artist.Description,
+        Location = artist.Location,
+        ProfileLink = artist.ProfileLink,
+        ImageUrl = artist.ImageUrl,
+        workImage = artist.workImage 
+    };
+
+    showEditModal = true;
+}
+
+
+    private async Task SaveEdit()
+    {
+        try
+        {
+            // 1. Update artist in the database
+            await ArtistService.UpdateArtistAsync(editArtist);
+
+            // 2. Reload updated list from database
+            await LoadApprovedArtists();
+
+            // 3. Show success notification and close modal
+            notificationMessage = "Artist updated successfully!";
+            notificationCss = "alert alert-success";
+            showEditModal = false;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            notificationMessage = "Error updating artist: " + ex.Message;
+            notificationCss = "alert alert-danger";
+        }
+    }
+
+
+private void CancelEdit()
+{
+    showEditModal = false;
+}
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadApplications();
+        await LoadApprovedArtists();
+    }
+
+    private async Task LoadApplications()
+    {
+        applications = ArtistService.GetPendingApplications(); 
+        StateHasChanged();
+    }
+
+    private async Task Approve(int appId)
+    {
+        try
+        {
+            int adminUserId = 1; // Get current admin ID dynamically if needed
+            ArtistService.ApproveApplication(appId, adminUserId);
+
+            notificationMessage = "Application approved successfully!";
+            notificationCss = "alert alert-success";
+
+            await LoadApplications();        // Refresh pending list
+            await LoadApprovedArtists();     // Refresh approved list 
+        }
+        catch (Exception ex)
+        {
+            notificationMessage = "Error approving application: " + ex.Message;
+            notificationCss = "alert alert-danger";
+        }
+    }
+
+
+    private void ShowRejectReason(int appId)
+    {
+        rejectApplicationId = appId;
+        rejectReason = "";
+        showRejectModal = true;
+    }
+
+    private async Task ConfirmReject()
+    {
+        if (string.IsNullOrWhiteSpace(rejectReason))
+        {
+            notificationMessage = "Rejection reason is required.";
+            notificationCss = "alert alert-warning";
+            return;
+        }
+
+        try
+        {
+            int adminUserId = 1; // Get current admin ID dynamically if needed
+            ArtistService.RejectApplication(rejectApplicationId, adminUserId, rejectReason);
+
+            notificationMessage = "Application rejected.";
+            notificationCss = "alert alert-success";
+            showRejectModal = false;
+
+            await LoadApplications();
+        }
+        catch (Exception ex)
+        {
+            notificationMessage = "Error rejecting application: " + ex.Message;
+            notificationCss = "alert alert-danger";
+        }
+    }
+
+    private void CancelReject()
+    {
+        showRejectModal = false;
+    }
+
+    private List<ArtistDropdownModel> approvedArtists;
+
+    private async Task LoadApprovedArtists()
+    {
+        approvedArtists = await ArtistService.GetApprovedArtists();
+        StateHasChanged();
+    }
+
+   
+    private bool isUploading = false;
+
+    private async Task OnEditFileChange(InputFileChangeEventArgs e, string imageType)
+    {
+        isUploading = true;
+
+        var file = e.File;
+        var uploadsFolder = Path.Combine(Env.WebRootPath, "artist");
+
+        if (!Directory.Exists(uploadsFolder))
+        {
+            Directory.CreateDirectory(uploadsFolder);
+        }
+
+        var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.Name)}";
+        var filePath = Path.Combine(uploadsFolder, fileName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.OpenReadStream(5 * 1024 * 1024).CopyToAsync(stream);
+        }
+
+        var relativeUrl = $"/artist/{fileName}";
+
+        if (imageType == "profile")
+        {
+            editArtist.ImageUrl = relativeUrl;
+        }
+        else if (imageType == "work")
+        {
+            editArtist.workImage = relativeUrl;
+        }
+
+        isUploading = false;
+    }
+
+    private async Task ConfirmRemove(int artistId)
+    {
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", $"Are you sure you want to remove this artist?");
+        if (!confirmed)
+            return;
+
+        try
+        {
+            await ArtistService.RemoveArtistAsync(artistId);  // Call service to delete artist
+            notificationMessage = "Artist removed successfully.";
+            notificationCss = "alert alert-success";
+
+            await LoadApprovedArtists();  // Refresh list
+        }
+        catch (Exception ex)
+        {
+            notificationMessage = "Error removing artist: " + ex.Message;
+            notificationCss = "alert alert-danger";
+        }
+    }
+
+}
+
+ <style>
+ /* Dashboard Container */
+ .applications-dashboard {
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+     overflow: hidden;
+     margin: 20px auto;
+     max-width: 1200px;
+ }
+
+ .dashboard-header {
+     padding: 20px;
+        border-bottom: 1px solid #BEBEBE;
+     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+ }
+
+ .dashboard-title {
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: #333;
+     margin: 0;
+ }
+
+ .dashboard-subtitle {
+     color: #6c757d;
+     font-size: 0.9rem;
+     margin-top: 5px;
+ }
+
+ /* Loading State */
+ .loading-state {
+     padding: 40px;
+     text-align: center;
+     color: #6c757d;
+ }
+
+     .loading-state .spinner-border {
+         width: 3rem;
+         height: 3rem;
+         margin-bottom: 15px;
+     }
+
+ /* Empty State */
+ .empty-state {
+     padding: 50px 20px;
+     text-align: center;
+     color: #6c757d;
+ }
+
+     .empty-state i {
+         font-size: 3rem;
+         color: #adb5bd;
+         margin-bottom: 15px;
+     }
+
+     .empty-state h3 {
+         font-size: 1.2rem;
+         margin-bottom: 5px;
+         color: #495057;
+     }</style>

@@ -1,0 +1,187 @@
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\Solution\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\Solution\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\copy-2\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\copy-2\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\hghjgkj\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\fyyyyyypppp\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\PROJECTTTTT - Copy\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FINALLLLLL\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYPp\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FYPp\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\FYP-DASTKARI\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Aqsa\Desktop\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\DAL.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\DAL.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\Services\obj\Debug\net8.0\ref\Services.dll

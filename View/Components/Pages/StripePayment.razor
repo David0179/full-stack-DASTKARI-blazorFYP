@@ -1,0 +1,16 @@
+﻿@page "/stripepayment"
+@inject IStripePaymentService PaymentService
+@inject NavigationManager NavManager
+
+<h3>Pay with Stripe</h3>
+<button class="btn btn-primary" @onclick="StartPayment">Pay $49.99</button>
+
+<p><b>Test Card:</b> 4242 4242 4242 4242</p>
+
+@code {
+    private async Task StartPayment()
+    {
+        var url = PaymentService.CreateCheckoutSession(49.99m, "Dastkari Handmade Item");
+        NavManager.NavigateTo(url, true);
+    }
+}

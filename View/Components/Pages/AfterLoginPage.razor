@@ -1,0 +1,84 @@
+﻿@page "/after-login"
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@inject NavigationManager NavManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject UserSession UserSession
+@using View.Authentication
+@inject AuthenticationStateProvider AuthProvider
+@rendermode InteractiveServer
+
+
+<h3>Redirecting...</h3>
+
+@code {
+    private UserService _userService = new UserService();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var httpContext = HttpContextAccessor.HttpContext;
+        if (httpContext == null || !httpContext.User.Identity!.IsAuthenticated)
+            return;
+
+        var claims = httpContext.User.Claims;
+        var name = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value ?? "";
+        var email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value ?? "";
+
+        if (string.IsNullOrEmpty(email))
+        {
+            NavManager.NavigateTo("/");
+            return;
+        }
+
+        var user = _userService.GetUserByEmail(email);
+
+        if (user == null)
+        {
+            var totalUsers = _userService.GetTotalUserCount();
+
+            user = new Entities.AppUser
+            {
+                Name = name,
+                Email = email,
+                Role = totalUsers == 0 ? "Admin" : "User"
+            };
+
+            _userService.AddUser(user);
+        }
+
+        var finalUser = _userService.GetUserByEmail(email);
+
+        var newClaims = new[]
+        {
+            new Claim(ClaimTypes.NameIdentifier, finalUser!.Id.ToString()),
+            new Claim(ClaimTypes.GivenName, finalUser.Name),
+            new Claim(ClaimTypes.Email, finalUser.Email),
+            new Claim(ClaimTypes.Role, finalUser.Role)
+        };
+
+        var identity = new ClaimsIdentity(newClaims, AppConstants.AuthScheme);
+        var principal = new ClaimsPrincipal(identity);
+
+        await httpContext.SignInAsync(AppConstants.AuthScheme, principal);
+
+        //load the user into UserSession
+        await UserSession.LoadUserAsync(email);
+
+       
+        if (AuthProvider is CustomAuthenticationStateProvider customProvider)
+        {
+            customProvider.SetUser(finalUser);
+        }
+
+
+        if (finalUser.Role == "Admin")
+        {
+            NavManager.NavigateTo("/sales");
+        }
+        else
+        {
+            NavManager.NavigateTo("/");
+        }
+
+    }
+}

@@ -1,0 +1,1024 @@
+﻿@page "/counter"
+@using View.Components.Layout
+@inject IProductServices productService
+@inject IWebHostEnvironment env
+@layout AdminLayout
+@using System.ComponentModel.DataAnnotations
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "Admin")]
+@inject IArtistService ArtistService
+
+<div class="product-management-container">
+    <div class="header-section">
+        <h3 class="page-title">Product Management</h3>
+        <p class="page-subtitle">Add, edit, and manage your products and artists</p>
+    </div>
+
+    <div class="card form-card">
+        <div class="card-header">
+            <h4>@(product.Id == 0 ? "Add New Product" : "Edit Product")</h4>
+        </div>
+        <div class="card-body">
+            <EditForm Model="@product" OnValidSubmit="@SaveData" FormName="productForm">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="validation-summary" />
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Product Name</label>
+                            <input type="text" class="form-control modern-input" @bind-value="product.Name" placeholder="Enter product name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Price ($)</label>
+                            <input type="number" class="form-control modern-input" @bind-value="product.Price" placeholder="0.00" step="0.01" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control modern-input" @bind="product.Description" rows="3" placeholder="Product description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Stock Quantity</label>
+                            <input type="number" class="form-control modern-input" @bind-value="product.StockQuantity" placeholder="Available quantity" min="0" />
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" @bind="product.IsAvailable" id="isAvailableCheck" />
+                            <label class="form-check-label" for="isAvailableCheck">Product Available</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Product Image</label>
+                            <div class="image-upload-container">
+                                <label class="upload-area" for="productImageUpload">
+                                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                    {
+                                        <img src="@product.ImageUrl" class="preview-image" />
+                                        <span class="upload-text">Change Image</span>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                        <span class="upload-text">Click to upload product image</span>
+                                    }
+                                </label>
+                                <InputFile id="productImageUpload" class="d-none" OnChange="@OnProductImageChange" accept="image/*" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="section-divider">
+    <span>Artist Information</span>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- Dropdown to select an approved artist -->
+        <div class="form-group">
+            <label class="form-label">Select Artist</label>
+                            <select class="form-control modern-input" @onchange="OnArtistSelected">
+                <option value="">-- Select an Artist --</option>
+                                @if (artists != null && artists.Any())
+                                {
+                                    @foreach (var artist in artists)
+                                    {
+                                        <option value="@artist.Id">@artist.Name</option>
+                                    }
+                                }
+                                else
+                                {
+                                    <option disabled>Loading or no artists found</option>
+                                }
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Artist Name</label>
+            <input type="text" class="form-control modern-input" @bind-value="product.ArtistName"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Artist Profile Link</label>
+            <input type="text" class="form-control modern-input" @bind-value="product.ArtistProfileLink"  />
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="form-label">Artist Profile Description</label>
+            <textarea class="form-control modern-input" @bind="product.ArtistProfileDescription" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Artist Image</label>
+            <div class="image-upload-container">
+                @if (!string.IsNullOrEmpty(product.ArtistImageUrl))
+                {
+                    <img src="@product.ArtistImageUrl" class="preview-image" />
+                }
+                else
+                {
+                    <span class="text-muted">No artist image selected</span>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-save">
+                        <i class="fas @(product.Id == 0 ? "fa-save" : "fa-sync-alt")"></i>
+                        @(product.Id == 0 ? "Save Product" : "Update Product")
+                    </button>
+                    @if (product.Id != 0)
+                    {
+                        <button type="button" class="btn btn-outline-secondary btn-cancel" @onclick="@(() => product = new ProductsModel())">
+                            <i class="fas fa-times"></i> Cancel
+                        </button>
+                    }
+                </div>
+            </EditForm>
+        </div>
+    </div>
+
+    <div class="card products-table-card mt-4">
+        <div class="card-header">
+            <h4>Your Products</h4>
+            <div class="table-actions">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search by ID, Name or Artist..." @bind="searchQuery" />
+                    <button class="btn btn-primary" @onclick="SearchProducts">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            @if (products.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table modern-table">
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Artist</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var p in products)
+                            {
+                                <tr>
+                                    <td>@p.Id</td>
+                                    <td>
+                                        <div class="table-image-container">
+                                            <img src="@p.ImageUrl" class="table-image" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">@p.Name</div>
+                                            <div class="product-description">@p.Description</div>
+                                        </div>
+                                    </td>
+                                    <td class="price-cell">$@p.Price.ToString("0.00")</td>
+                                    <td>
+                                        <span class="stock-badge @(p.StockQuantity > 0 ? "in-stock" : "out-of-stock")">
+                                            @p.StockQuantity
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="status-badge @(p.IsAvailable ? "active" : "inactive")">
+                                            @(p.IsAvailable ? "Available" : "Unavailable")
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="artist-info">
+                                            <div class="artist-avatar">
+                                                @if (!string.IsNullOrEmpty(p.ArtistImageUrl))
+                                                {
+                                                    <img src="@p.ArtistImageUrl" class="artist-image" />
+                                                }
+                                                else
+                                                {
+                                                    <div class="artist-initials">@GetInitials(p.ArtistName)</div>
+                                                }
+                                            </div>
+                                            <div>
+                                                <div class="artist-name">@p.ArtistName</div>
+                                                <div class="artist-meta">
+                                                    <span class="artist-id">ID: @p.ArtistId</span>
+                                                    @if (!string.IsNullOrEmpty(p.ArtistProfileLink))
+                                                    {
+                                                        <a href="@p.ArtistProfileLink" target="_blank" class="artist-link">
+                                                            <i class="fas fa-external-link-alt"></i> Profile
+                                                        </a>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-action btn-edit" @onclick="@(() => EditProduct(p))" title="Edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-action btn-delete" @onclick="@(() => DeleteProduct(p.Id))" title="Delete">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                            <button class="btn btn-action btn-view" title="View Details" @onclick="@(() => ShowProductDetails(p))">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <i class="fas fa-box-open empty-icon"></i>
+                    <h5>No Products Found</h5>
+                    <p>You haven't added any products yet. Click the button above to get started.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@if (showModal && selectedProduct != null)
+{
+        <div class="modal-overlay" @onclick="CloseModal">
+            <div class="modal-content" @onclick:stopPropagation>
+                <button class="modal-close" @onclick="CloseModal">&times;</button>
+                <h3>@selectedProduct.Name</h3>
+                <img src="@selectedProduct.ImageUrl" alt="Product Image" class="modal-image" />
+                <p><strong>Description:</strong> @selectedProduct.Description</p>
+                <p><strong>Price:</strong> $@selectedProduct.Price</p>
+                <p><strong>Artist:</strong> @selectedProduct.ArtistName (ID: @selectedProduct.ArtistId)</p>
+            </div>
+        </div>
+
+}
+
+
+@code {
+    
+    private ProductsModel product = new();
+    private List<ProductsModel> products = new();
+    private IBrowserFile? uploadedProductFile;
+    private IBrowserFile? uploadedArtistFile;
+    private string searchQuery = string.Empty;
+
+    private List<ArtistDropdownModel> artists;
+    private int selectedArtistId;
+
+    private void SearchProducts()
+    {
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            products = productService.GetProductsBySearch(searchQuery);
+        }
+        else
+        {
+            products = productService.GetData();
+        }
+        Console.WriteLine($"Search query: {searchQuery}");
+        Console.WriteLine($"Results count: {products.Count}");
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        LoadProducts(); 
+        await LoadArtists(); 
+    }
+
+    private async Task LoadArtists()
+    {
+        artists = await ArtistService.GetApprovedArtists();
+    }
+
+    private void OnArtistSelected(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out int id))
+        {
+            selectedArtistId = id;
+
+            var selected = artists.FirstOrDefault(a => a.Id == id);
+            if (selected != null)
+            {
+                product.ArtistId = selected.Id;
+                product.ArtistName = selected.Name;
+                product.ArtistProfileLink = selected.ProfileLink;
+                product.ArtistProfileDescription = selected.Description;
+                product.ArtistImageUrl = selected.ImageUrl;
+            }
+        }
+    }
+    private string GetInitials(string name)
+    {
+        if (string.IsNullOrEmpty(name)) return "AN";
+        var parts = name.Split(' ');
+        if (parts.Length == 1) return name[..2].ToUpper();
+        return $"{parts[0][0]}{parts[^1][0]}".ToUpper();
+    }
+
+    private async Task OnProductImageChange(InputFileChangeEventArgs e)
+    {
+        uploadedProductFile = e.File;
+
+        if (uploadedProductFile is not null)
+        {
+            var uploadsFolder = Path.Combine(env.WebRootPath, "products-images");
+
+            if (!Directory.Exists(uploadsFolder))
+                Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(uploadedProductFile.Name)}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            await using FileStream fs = new(filePath, FileMode.Create);
+            await uploadedProductFile.OpenReadStream(maxAllowedSize: 10_000_000).CopyToAsync(fs);
+
+            product.ImageUrl = $"/products-images/{fileName}";
+            StateHasChanged();
+        }
+    }
+
+    private async Task OnArtistImageChange(InputFileChangeEventArgs e)
+    {
+        uploadedArtistFile = e.File;
+
+        if (uploadedArtistFile is not null)
+        {
+            var uploadsFolder = Path.Combine(env.WebRootPath, "artist-images");
+
+            if (!Directory.Exists(uploadsFolder))
+                Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(uploadedArtistFile.Name)}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            await using FileStream fs = new(filePath, FileMode.Create);
+            await uploadedArtistFile.OpenReadStream(maxAllowedSize: 10_000_000).CopyToAsync(fs);
+
+            product.ArtistImageUrl = $"/artist-images/{fileName}";
+            StateHasChanged();
+        }
+    }
+
+    private void SaveData()
+    {
+        try
+        {
+            if (product.Id == 0)
+                productService.SaveData(product);
+            else
+                productService.UpdateProduct(product);
+
+            product = new();
+            uploadedProductFile = null;
+            uploadedArtistFile = null;
+            LoadProducts();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private void LoadProducts()
+    {
+        products = productService.GetData();
+    }
+
+    private void EditProduct(ProductsModel p)
+    {
+        product = new ProductsModel
+        {
+            Id = p.Id,
+            Name = p.Name,
+            Price = p.Price,
+            Description = p.Description,
+            StockQuantity=p.StockQuantity,
+            ImageUrl = p.ImageUrl,
+            ArtistName = p.ArtistName,
+            ArtistId = p.ArtistId,
+            ArtistImageUrl = p.ArtistImageUrl,
+            ArtistProfileDescription = p.ArtistProfileDescription
+        };
+    }
+
+    private void DeleteProduct(int id)
+    {
+        // You might want to add a confirmation dialog here
+        try
+        {
+            productService.DeleteData(id);
+            LoadProducts();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Delete failed: {ex.Message}");
+        }
+    }
+
+    private bool showModal = false;
+    private ProductsModel selectedProduct;
+
+    private void ShowProductDetails(ProductsModel product)
+    {
+        selectedProduct = product;
+        showModal = true;
+    }
+
+    private void CloseModal()
+    {
+        showModal = false;
+        selectedProduct = null;
+    }
+}
+
+<style>
+   
+    /* Modern Color Scheme */
+    :root {
+        --primary-color: #ff5100; /* Main orange */
+        --secondary-color: #cc4400; /* Darker orange/burnt orange */
+        --accent-color: #ff7a33; /* Lighter orange */
+        --light-color: #fff5eb; /* Very light orange/cream */
+        --dark-color: #4a1a00; /* Very dark brownish-orange */
+        --success-color: #43aa8b; /* Greenish teal for success (keeping some contrast) */
+        --danger-color: #e63946; /* Strong red for danger */
+        --warning-color: #f8961e; /* Bright orange warning */
+        --info-color: #4895ef; /* Blue for informational (kept for contrast) */
+    }
+
+
+    /* Backdrop with blur effect */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+        backdrop-filter: blur(5px); /* blur effect */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+    /* Modal content box */
+    .modal-content {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        position: relative;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        max-height: 90vh;
+        overflow-y: auto;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    /* Image inside modal */
+    .modal-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 250px;
+        display: block;
+        margin: 0 auto 1rem auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    /* Close button */
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        border: none;
+        background: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #ff5100;
+    }
+
+    .product-management-container {
+        padding: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .header-section {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+
+    .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1.25rem 1.5rem;
+        border-bottom: none;
+    }
+
+    .card-header h4 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--dark-color);
+    }
+
+    .modern-input {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .modern-input:focus {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+        outline: none;
+    }
+
+    .image-upload-container {
+        margin-top: 0.5rem;
+    }
+
+    .upload-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #e0e0e0;
+        border-radius: 8px;
+        padding: 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #f9f9f9;
+        min-height: 150px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .upload-area:hover {
+        border-color: var(--accent-color);
+        background-color: rgba(67, 97, 238, 0.05);
+    }
+
+    .upload-icon {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .upload-text {
+        color: #6c757d;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .preview-image {
+        max-width: 100%;
+        max-height: 200px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+
+    .section-divider {
+        position: relative;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .section-divider span {
+        display: inline-block;
+        padding: 0 1rem;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .section-divider:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #e0e0e0;
+        z-index: 0;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .btn-save {
+        background-color: var(--primary-color);
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-save:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+
+    .btn-cancel {
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+    }
+
+    .table-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .search-box {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .search-icon {
+        color: #ff5100;
+        font-size: 1.2rem;
+    }
+
+    .search-input {
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        min-width: 200px;
+    }
+
+        .search-input:focus {
+            border-color: #ff5100;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 81, 0, 0.3);
+        }
+
+    .search-box .btn {
+        background-color: #ff5100;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
+        .search-box .btn:hover {
+            background-color: #e64a00;
+        }
+
+
+    .modern-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .modern-table thead th {
+        background-color: #f8f9fa;
+        color: #495057;
+        font-weight: 600;
+        padding: 0.6rem;
+        border-bottom: 2px solid #e9ecef;
+        position: sticky;
+        top: 0;
+    }
+
+    .modern-table tbody tr {
+        transition: all 0.2s ease;
+    }
+
+    .modern-table tbody tr:hover {
+        background-color: rgba(67, 97, 238, 0.05);
+    }
+
+    .modern-table td {
+        padding: 0.4rem;
+        border-bottom: 1px solid #e9ecef;
+        vertical-align: middle;
+    }
+
+    .table-image-container {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .table-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-info {
+        max-width: 250px;
+    }
+
+    .product-name {
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+    }
+
+    .product-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .price-cell {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .artist-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .artist-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .artist-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .artist-initials {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .artist-name {
+        font-weight: 500;
+    }
+
+    .artist-id {
+        font-size: 0.8rem;
+        color: #6c757d;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .btn-action {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        transition: all 0.2s ease;
+    }
+
+    .btn-edit {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        background-color: transparent;
+    }
+
+    .btn-edit:hover {
+        background-color: rgba(67, 97, 238, 0.1);
+    }
+
+    .btn-delete {
+        color: var(--danger-color);
+        border: 1px solid var(--danger-color);
+        background-color: transparent;
+    }
+
+    .btn-delete:hover {
+        background-color: rgba(247, 37, 133, 0.1);
+    }
+
+    .btn-view {
+        color: var(--info-color);
+        border: 1px solid var(--info-color);
+        background-color: transparent;
+    }
+
+    .btn-view:hover {
+        background-color: rgba(67, 170, 139, 0.1);
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .empty-icon {
+        font-size: 3rem;
+        color: #e9ecef;
+        margin-bottom: 1rem;
+    }
+
+    .empty-state h5 {
+        color: #6c757d;
+        margin-bottom: 0.5rem;
+    }
+
+    .empty-state p {
+        color: #adb5bd;
+    }
+
+    .validation-summary {
+        color: var(--danger-color);
+        background-color: rgba(247, 37, 133, 0.05);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid var(--danger-color);
+    }
+
+    .validation-summary ul {
+        margin-bottom: 0;
+        padding-left: 1rem;
+    }
+
+    @@media (max-width: 768px) {
+        .product-management-container {
+            padding: 1rem;
+        }
+
+        .row {
+            flex-direction: column;
+        }
+
+        .col-md-6 {
+            width: 100%;
+        }
+
+        .form-actions {
+            flex-direction: column;
+        }
+
+        .btn-save, .btn-cancel {
+            width: 100%;
+        }
+
+        .artist-info {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+    }
+
+    /* Add these styles to your existing CSS */
+    .stock-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+
+        .stock-badge.in-stock {
+            background-color: #e6f7ee;
+            color: #28a745;
+        }
+
+        .stock-badge.out-of-stock {
+            background-color: #fce8e8;
+            color: #dc3545;
+        }
+
+    .status-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+
+        .status-badge.active {
+            background-color: #e6f7ee;
+            color: #28a745;
+        }
+
+        .status-badge.inactive {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+    .artist-meta {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        color: #666;
+    }
+
+    .artist-link {
+        color: #2a52be;
+        text-decoration: none;
+    }
+
+        .artist-link:hover {
+            text-decoration: underline;
+        }
+
+    .form-check-input {
+        margin-top: 0.3rem;
+    }
+</style>

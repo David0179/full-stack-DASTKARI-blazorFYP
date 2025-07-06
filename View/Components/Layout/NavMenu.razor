@@ -1,0 +1,133 @@
+﻿@inject NavigationManager Nav
+@using View.Components
+@inject IProductServices productService
+@using Microsoft.AspNetCore.Components.Authorization
+
+
+<div class="app">
+    <!-- Top Header -->
+    <header class="header container-fluid d-flex flex-wrap align-items-center justify-content-between py-2 px-3 bg-white border-bottom">
+
+        <NavLink class="logo fw-bold fs-4 text-decoration-none"
+                 href="/"
+                 style="cursor: pointer; color: #f16522; font-family: 'Times New Roman', serif; letter-spacing: 1px;">
+            Dastkari
+        </NavLink>
+
+
+      <SearchBar/>
+
+     
+
+        <!-- User Actions -->
+        <!-- User Actions -->
+        <div class="user-actions d-flex align-items-center gap-3 mt-2 mt-lg-0">
+            <AuthorizeView Roles="Admin">
+                <Authorized>
+                    <a href="/sales" class="custom-btn" id="navv" title="Admin Panel">
+                        <i class="fas fa-cogs"></i> <span>Admin Panel</span>
+                    </a>
+                </Authorized>
+            </AuthorizeView>
+
+            <AuthorizeView>
+                <Authorized>
+                    <a href="/apply-as-artist" class="custom-btn" id="navv" title="Become Artist">
+                        <i class="fas fa-paint-brush"></i><span>Become Artist</span>
+                    </a>
+                    <a href="/logout" class="custom-btn">Logout</a>
+                </Authorized>
+                <NotAuthorized>
+                    <a href="/login" class="custom-btn">Login</a>
+                    <a href="/login" class="custom-btn" id="navv">
+                        <i class="fas fa-paint-brush"></i><span>Become Artist</span>
+                    </a>
+                </NotAuthorized>
+            </AuthorizeView>
+
+
+
+            <div class="user-icons d-flex align-items-center gap-3">
+                
+                <a href="/addtocart" class="material-icons icon cart-link" title="Cart">
+                    shopping_cart
+                </a>
+
+            </div>
+        </div>
+
+    <!-- Navbar with Sticky Behavior -->
+    
+    </header>
+</div>
+
+@code {
+    
+    private void NavigateToSection(string sectionId)
+    {
+        Nav.NavigateTo($"#{sectionId}", forceLoad: false);
+        
+    }
+
+    private void OnSignInClick()
+    {
+        Nav.NavigateTo("/login"); 
+    }
+    private void GoToCart()
+    {
+        Console.WriteLine("GoToCart clicked");
+        Nav.NavigateTo("/addtocart");
+    }
+ 
+    private string searchQuery = "";
+    private List<ProductsModel> filteredSuggestions = new();
+    private bool showSuggestions = false;
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        searchQuery = e.Value?.ToString();
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            filteredSuggestions = productService.GetProductsBySearch(searchQuery);
+            showSuggestions = filteredSuggestions.Any();
+        }
+        else
+        {
+            showSuggestions = false;
+        }
+    }
+    private ProductsModel product = new();
+    private List<ProductsModel> products = new();
+    private void SearchProducts()
+    {
+
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            products = productService.GetProductsBySearch(searchQuery);
+        }
+        else
+        {
+            products = productService.GetData();
+        }
+
+        Console.WriteLine($"Search query: {searchQuery}");
+        Console.WriteLine($"Results count: {products.Count}");
+    }
+
+    private void HandleSuggestionClick(ProductsModel item)
+    {
+        if (item.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+        {
+            // Navigate to product page with product ID as query param or route param
+            Nav.NavigateTo($"/products?selectedProductId={item.Id}");
+        }
+        else if (item.ArtistName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+        {
+            Nav.NavigateTo($"/profile/{item.ArtistId}");
+        }
+
+        searchQuery = "";
+        showSuggestions = false;
+    }
+
+}

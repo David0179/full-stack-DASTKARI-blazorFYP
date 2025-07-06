@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = View
+build_property.RootNamespace = View
+build_property.ProjectDir = C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\View\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Dawood\Downloads\full-stack-DASTKARI - Copy\View
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2Nlc3NEZW5pZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/AfterLoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZnRlckxvZ2luUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/ArtistProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcnRpc3RQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Hero.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIZXJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/InventoryAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcnlBZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Logged-out.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dnZWQtb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/ProductRevenueChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UmV2ZW51ZUNoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/SalesChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYWxlc0NoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/StripePayment.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdHJpcGVQYXltZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Success.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdWNjZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Layout/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQWRtaW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-341nl26sq9
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-i52t285u5h
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4qidup8cmh
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Layout/SearchBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2VhcmNoQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-9gj3g4wlu7
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8o65ft35nh
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/AddToCart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUb0NhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8nfbmvguop
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/ApplyAsArtist.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHBseUFzQXJ0aXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ab5b1v8l89
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/ArtisAaccounts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcnRpc0FhY2NvdW50cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3opnsa7a65
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8wc4ynrhkz
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-c0nuchz8x9
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-4o2ieldxo7
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ly60x0qblo
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-z86qfxt08g
+
+[C:/Users/Dawood/Downloads/full-stack-DASTKARI - Copy/View/Components/Pages/RegisterEvent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3RlckV2ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-b9cfnt2lxf

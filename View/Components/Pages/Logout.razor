@@ -1,0 +1,34 @@
+﻿@page "/logout"
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@inject NavigationManager NavManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject AuthenticationStateProvider AuthProvider
+@inject UserSession UserSession
+
+<h3>Logging out...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var httpContext = HttpContextAccessor.HttpContext;
+
+        if (httpContext != null)
+        {
+            await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        }
+
+        if (AuthProvider is CustomAuthenticationStateProvider customProvider)
+        {
+            customProvider.SetUser(null);
+        }
+
+        UserSession.ClearSession();
+
+       
+        NavManager.NavigateTo("/", forceLoad: true);
+
+    }
+}

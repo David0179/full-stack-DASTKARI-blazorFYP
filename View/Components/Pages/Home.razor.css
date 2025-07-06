@@ -1,0 +1,102 @@
+﻿/* Ensure navbar has enough height on small screens */
+@media (max-width: 768px) {
+    .navbar {
+        min-height: 90px;
+        padding: 2px 2px;
+        position: relative;
+        z-index: 1050; /* Keeps it above other elements */
+    }
+
+    .navbar-toggler {
+        margin-top:40px;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.5rem; /* Makes it more clickable */
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+    .custom-toggler {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 35px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+        .custom-toggler .bar {
+            height: 3px;
+            background-color: black;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 30px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+
+        .navbar-toggler .close-icon {
+            font-size: 1rem;
+            display: none;
+        }
+
+        .navbar-toggler.collapsed .navbar-toggler-icon {
+            display: inline-block;
+        }
+  
+        .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+            display: none;
+        }
+
+        .navbar-toggler:not(.collapsed) .close-icon {
+            display: inline-block;
+        }
+}
+.custom-mobile-menu {
+    position: absolute;
+    top: 100%; /* Show directly below hamburger */
+    left: 10px; /* Align to left if hamburger is on left */
+    background-color: #fff;
+    border-radius: 0.5rem;
+    z-index: 1050;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+    .custom-mobile-menu .nav-link {
+        padding: 0.5rem 1rem;
+        color: #333;
+    }
+
+        .custom-mobile-menu .nav-link:hover {
+            background-color: #f5f5f5;
+            color: #ff5500;
+        }
+/* Hide default nav menu on small screens */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none !important;
+    }
+}
+
+/* Hide custom mobile menu on large screens */
+@media (min-width: 992px) {
+    .custom-mobile-menu {
+        display: none !important;
+    }
+}

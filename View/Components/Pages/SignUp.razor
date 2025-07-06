@@ -1,0 +1,133 @@
+﻿@page "/signup"
+@inject NavigationManager Navigation
+
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" @bind="Username" placeholder="Enter username" />
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" @bind="Email" placeholder="Enter email" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" @bind="Password" placeholder="Enter password" />
+        </div>
+
+        <button class="register-button" @onclick="RegisterUser">Register</button>
+
+        <p>Already have an account? <a href="#" @onclick="GoToSignIn"><strong>Sign in</strong></a></p>
+    </div>
+</body>
+@code {
+    private string Username { get; set; }
+    private string Email { get; set; }
+    private string Password { get; set; }
+
+    private void RegisterUser()
+    {
+        // Logic for registration (e.g., API call)
+        Console.WriteLine($"User Registered: {Username}, {Email}");
+    }
+
+    private void GoToSignIn()
+    {
+        Navigation.NavigateTo("/signin");
+    }
+}
+<style>
+    body {
+        background: url('/images/bg-7.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .signup-container {
+        width: 400px;
+        background: rgba(255, 255, 255, 0.1); /* Transparent background */
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        backdrop-filter: blur(10px); /* Glass effect */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        margin-top: 130px;
+    }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            border: none;
+            border-bottom: 2px solid white;
+            background: none;
+            color: white;
+            padding: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+    input::placeholder {
+        color: white; /* White with slight transparency */
+        font-size: 14px;
+    }
+
+    .register-button {
+        background-color: #FF5722;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+        .register-button:hover {
+            background-color: #E64A19;
+        }
+
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+        p a {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            p a:hover {
+                text-decoration: underline;
+            }
+
+</style>

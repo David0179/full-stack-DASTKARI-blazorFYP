@@ -1,0 +1,338 @@
+﻿/* Form Container */
+.form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #495057;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+    .form-control:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+    }
+
+/* File Upload */
+.file-upload-container {
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+    .file-upload-container:hover {
+        border-color: #6c63ff;
+        background-color: #f8f9fa;
+    }
+
+.file-upload-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6c757d;
+}
+
+    .file-upload-label i {
+        font-size: 2rem;
+        color: #6c63ff;
+        margin-bottom: 0.5rem;
+    }
+
+/* Image Preview */
+.image-preview img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+/* Validation */
+.validation-summary {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Notifications */
+.alert-notification {
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+    .alert-notification i {
+        margin-right: 0.75rem;
+        font-size: 1.25rem;
+    }
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    padding: 2rem;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 1.5rem;
+}
+
+.success-message h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.success-message p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Submit Button */
+.form-submit {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #5a52d6;
+        border-color: #5a52d6;
+        transform: translateY(-2px);
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .form-title {
+        font-size: 1.75rem;
+    }
+}
+/* Enhanced Orange Gradient Form Container */
+.form-container {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: linear-gradient(135deg, #FFF7ED, #FFEBC1); /* softer background */
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.form-title {
+    color: #E65100;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+    .form-title::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 4px;
+        background: #FFA726;
+        margin: 0.75rem auto 0;
+        border-radius: 10px;
+    }
+
+/* Inputs */
+.form-group label {
+    font-weight: 600;
+    color: #5D4037;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #FFD180;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+    .form-control:focus {
+        border-color: #FF9800;
+        box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
+        outline: none;
+    }
+
+/* File Upload */
+.file-upload-container {
+    border: 2px dashed #FFB74D;
+    background: #FFFBEA;
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .file-upload-container:hover {
+        background-color: #FFF3E0;
+        border-color: #FFA726;
+    }
+
+.file-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F57C00;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+    .file-upload-label i {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #FB8C00;
+    }
+
+.image-preview img {
+    max-height: 150px;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border: 2px solid #FFE0B2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Validation and Alert Boxes */
+.validation-summary, .alert-notification {
+    background: #FFF3E0;
+    border: 1px solid #FFCCBC;
+    color: #BF360C;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Submit and Button Styles */
+.btn-primary, .styled-submit-btn {
+    background: linear-gradient(90deg, #FF8F00, #FF6F00);
+    border: none;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 111, 0, 0.25);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .btn-primary:hover,
+    .styled-submit-btn:hover:enabled {
+        background: linear-gradient(90deg, #D84315, #FF7043);
+        transform: scale(1.04);
+        border: 2px solid #D84315;
+    }
+
+    .styled-submit-btn:disabled {
+        background: #FFE0B2;
+        border-color: #FFCC80;
+        color: #A9A9A9;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+
+/* Success Feedback */
+.success-message {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #E8F5E9;
+    border-radius: 20px;
+    animation: popIn 0.7s ease;
+}
+
+.success-icon {
+    font-size: 3.5rem;
+    color: #43A047;
+    margin-bottom: 1rem;
+}
+
+/* Loader Spinner */
+.spinner-border {
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

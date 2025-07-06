@@ -1,0 +1,188 @@
+﻿@page "/products"
+@using View.Components.Layout
+@inject IProductServices productService
+@inject IWebHostEnvironment env
+@using System.ComponentModel.DataAnnotations
+@rendermode InteractiveServer
+@inject ICartService CartService
+@inject NavigationManager Nav
+@using Microsoft.AspNetCore.WebUtilities
+
+@code {
+    private string? hoveredArtist;
+
+    private void HandleMouseEnter(string artist)
+    {
+        hoveredArtist = artist;
+    }
+
+    private void HandleMouseLeave()
+    {
+        hoveredArtist = null;
+    }
+
+    private List<ProductsModel> products = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = productService.GetData();
+        showLoadMore = products.Count > initialProductsToShow;
+
+        products = productService.GetData();
+
+        var uri = new Uri(Nav.Uri);
+        var queryParams = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+        if (queryParams.TryGetValue("selectedProductId", out var selectedProductIdString))
+        {
+            if (int.TryParse(selectedProductIdString, out int selectedProductId))
+            {
+                selectedProduct = products.FirstOrDefault(p => p.Id == selectedProductId);
+                if (selectedProduct != null)
+                {
+                    OpenModal(selectedProduct);
+                }
+            }
+        }
+    }
+
+    private string GetInitials(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return "";
+        var parts = name.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        return string.Join("", parts.Select(p => p[0])).ToUpperInvariant();
+    }
+
+    private bool showConfirmation = false;
+    private string confirmationMessage = "";
+    private System.Timers.Timer? confirmationTimer;
+
+    private void AAddToCart(ProductsModel product, int quantity = 1)
+    {
+        CartService.AddToCart(product, quantity);
+        confirmationMessage = $"{quantity} x {product.Name} has been added to the cart!";
+        showConfirmation = true;
+
+        confirmationTimer?.Dispose();
+        confirmationTimer = new System.Timers.Timer(3000);
+        confirmationTimer.Elapsed += (sender, args) =>
+        {
+            showConfirmation = false;
+            InvokeAsync(StateHasChanged);
+            confirmationTimer?.Dispose();
+        };
+        confirmationTimer.Start();
+    }
+
+
+    private ProductsModel? selectedProduct;
+    private int selectedQuantity = 1;
+    private void OpenModal(ProductsModel product)
+    {
+        selectedProduct = product;
+        selectedQuantity = 1;
+    }
+
+    private void CloseModal()
+    {
+        selectedProduct = null;
+    }
+
+    private int productsToShow = 8; // Assuming 3 products per row, 2 rows = 6 products
+    private const int initialProductsToShow = 6;
+    private bool showLoadMore = false;
+    private void LoadMore()
+    {
+        productsToShow = products.Count;
+        showLoadMore = false;
+    }
+
+}
+
+<h1 class="page-title">Discover the Art of Authentic Craftsmanship</h1>
+<div class="product-listing">
+    @if (products.Any(p => p.StockQuantity > 0))
+    {
+        @foreach (var product in products.Where(p => p.StockQuantity > 0).Take(productsToShow))
+        {
+            <div class="product-card">
+
+                <img src="@product.ImageUrl" alt="@product.Name" class="product-image" @onclick="() => OpenModal(product)" />
+                <div class="product-info">
+                    <h3 class="product-name">@product.Name</h3>
+                    <p class="product-price">@product.Price</p>
+                    <p class="product-description">@product.Description</p>
+
+                    <a href="@($"/profile/{product.ArtistId}")" style="color: #ff5500; text-decoration: none;">
+                        @product.ArtistName
+                    </a>
+
+
+                    <button class="add-to-cart-btn" @onclick="() => AAddToCart(product)">Add to Cart</button>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12 text-center py-5">
+            <div class="alert alert-info">
+                <h5>No products available right now.</h5>
+                <p class="mb-0">Please check back later.</p>
+            </div>
+        </div>
+    }
+</div>
+@if (showLoadMore)
+{
+    <div id="load-more-container">
+        <button @onclick="LoadMore" class="load-more-btn">Load More</button>
+    </div>
+}
+
+@if (selectedProduct != null)
+{
+    <div class="modal-overlay" @onclick="CloseModal">
+        <div class="modal-content fancy-modal" @onclick:stopPropagation>
+            
+
+            <div class="modal-body">
+                <button class="modal-close" @onclick="() => CloseModal()">×</button>
+                <div class="modal-left">
+                    <img src="@selectedProduct.ImageUrl" alt="@selectedProduct.Name" class="modal-full-image" />
+                </div>
+                <div class="modal-right">
+                    <h2>@selectedProduct.Name</h2>
+                    <p class="modal-price">@selectedProduct.Price</p>
+                    <p class="modal-description">@selectedProduct.Description</p>
+                    <div class="quantity-selector">
+                        <label for="quantitySelect">Quantity:</label>
+                        <select id="quantitySelect" @bind="selectedQuantity" style="margin-left: 8px; padding: 4px;">
+                            @for (int i = 1; i <= selectedProduct.StockQuantity; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                        <small class="text-muted" style="margin-left: 10px;">(Available: @selectedProduct.StockQuantity)</small>
+                    </div>
+
+                    <hr />
+                    <div class="modal-artist-info">
+                        <h4>By @selectedProduct.ArtistName</h4>
+                        <p>@selectedProduct.ArtistProfileDescription</p>
+                        <NavLink href="@($"/profile/{selectedProduct.ArtistId}")" class="artist-profile-link">
+                            View Artist Profile →
+                        </NavLink>
+                    </div>
+                    <button class="modal-add-to-cart-btn" @onclick="() => AAddToCart(selectedProduct)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@if (showConfirmation)
+{
+    <div class="confirmation-toast">
+        @confirmationMessage
+    </div>
+}
